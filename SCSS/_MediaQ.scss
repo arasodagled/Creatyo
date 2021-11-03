@@ -1,0 +1,162 @@
+@media only screen and (max-width: 768px)
+{
+    header{
+        padding:0.5rem 7.5rem;
+    }
+
+    main{
+        height: auto;
+        width: 100%;
+        padding-left: 10rem;
+    }
+
+    .whyDesign{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+        "whyDesignImage"
+        "whyDesignText"
+        ;
+        padding: 0rem 0rem;
+        align-items: center;
+    }
+
+    #whyDesignImage{
+        grid-area: whyDesignImage;
+        justify-self: center;
+    }
+
+    #whyDesignText{
+        grid-area: whyDesignText;
+        justify-self: left;
+        padding: 1rem 10rem;
+
+        p {
+            padding: 2rem 0rem;
+        }
+    }
+
+    .thisis{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "ThisisImage"
+        "thisisText"
+        ;
+        padding: 5rem 10rem;
+        align-items: center;
+
+        p{
+            padding: 2rem 0rem;
+        }
+    }
+
+    #thisisText{
+        grid-area: thisisText;
+        justify-self: center;
+        padding: 1rem 0rem;
+    }
+
+    #thisisImage{
+        grid-area: ThisisImage;
+        justify-self: center;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 426px)
+{
+
+    header{
+        padding:0.5rem 6rem;
+    }
+
+    main{
+        height: auto;
+        width: 100%;
+        padding: 0rem 6rem;
+
+            h1{
+                font-size: $h1R;
+                line-height: $h1R-line-height;
+                letter-spacing: $h1R-spacing;
+                // padding-left: 0.5rem;
+            }
+
+            h2{
+                // padding-left: 0.5rem;
+                font-size: $h2R;
+                line-height: $h2R-line-height;
+                letter-spacing: $h2R-spacing;
+            }
+    }
+
+    .whyDesign{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+        "whyDesignImage"
+        "whyDesignText"
+        ;
+        padding: 1rem 1rem;
+        align-items: center;
+
+            p {
+                padding: 2rem 0rem;
+            }
+    }
+
+    #whyDesignImage{
+        grid-area: whyDesignImage;
+        justify-self: center;
+        width: 90vw !important;
+        height: auto !important;
+        padding: 0rem 0.5rem;
+
+    }
+
+    #whyDesignText{
+        grid-area: whyDesignText;
+        justify-self: center;
+        padding: 1rem 0.5rem;
+    }
+
+    .thisis{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+        "ThisisImage"
+        "thisisText"
+        ;
+        padding: 1rem 1rem;
+        align-items: center;
+
+            p{
+                padding: 2rem 0rem;
+            }
+    }
+
+    #thisisText{
+        grid-area: thisisText;
+        justify-self: center;
+        padding: 1rem 0.5rem;
+    }
+
+    #thisisImage{
+        grid-area: ThisisImage;
+        justify-self: center;
+        width: 90vw !important;
+        height: auto !important;
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+}

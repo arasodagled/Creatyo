@@ -1,0 +1,66 @@
+.menuButton {
+    color: $light-color ;
+    background-color: $main-color;
+    font-size: $p;
+    font-weight: $p-bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.8rem 1.8rem;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    
+    
+
+    &:hover{
+        color: $main-color;
+        background-color: $secundary-color;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+}
+
+.designButton {
+    background-color: $main-color; 
+    border: none;
+    color: $light-color;
+    padding: 0.8rem 1.2rem;
+    margin: 2rem 0rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $p;
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 2rem;
+    width: 15rem;
+
+    &:hover{
+        color: $main-color;
+        background-color: $secundary-color;
+        font-weight: $p-bold;
+        transition: 0.3s;
+    }
+}
+
+.thisisButton {
+    background-color: $main-color; 
+    border: none;
+    color: $light-color;
+    padding: 0.8rem 1.2rem;
+    margin: 2rem 0rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $p;
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 2rem;
+    width: 15rem;
+
+        &:hover{
+            color: $main-color;
+            background-color: $secundary-color;
+            font-weight: $p-bold;
+            transition: 0.3s;
+        }
+}

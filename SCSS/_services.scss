@@ -1,0 +1,42 @@
+.services{
+
+    padding: 2rem 10rem;
+
+    h1{
+        color: $dark-color;
+        font-size: $h1;
+        font-weight: $h1-weight;
+        letter-spacing: $h1-spacing;
+        line-height: $h1-line-height;
+        text-align: left;
+    }
+
+    p{
+        font-size: $p;
+        line-height: $p-line-height;
+        letter-spacing: $p-spacing;
+    }
+        
+}
+
+.serviceTable{
+    text-align: left;
+
+        th{
+            padding-right: 15rem;
+            font-size: $h3;
+            line-height: $h3-line-height;
+            padding: 0.7rem 0rem;
+        }
+
+        td{
+            font-size: $p;
+            line-height: $p-line-height;
+            letter-spacing: $p-spacing;
+        }
+}
+
+
+
+
+

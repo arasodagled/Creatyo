@@ -1,0 +1,226 @@
+@import "font";
+
+/* ----------Animación-------- */
+
+
+h1{
+    animation-duration: 2s;
+    animation-name: aparecer
+}
+
+h2{
+    animation-duration: 2s;
+    animation-name: aparecer 
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.video{
+    width: 100vw;
+}
+
+main{
+    background-color: $light-color;
+    height: 35rem;
+    width: 100%;
+    padding: 0rem 10rem;
+
+    h1{
+        color: $dark-color;
+        font-size: $h1;
+        font-weight: $h1-weight;
+        letter-spacing: $h1-spacing;
+        line-height: $h1-line-height;
+        text-align: left;
+        padding: 0rem 0rem;
+        margin-top: 0 ;
+
+        .titleHighlight{
+            font-weight: $h1-bold;
+        }
+    }
+
+    h2{
+        color: $dark-color;
+        font-size: $h2;
+        font-weight: $h2-weight;
+        letter-spacing: $h2-spacing;
+        line-height: $h2-line-height;
+        text-align: left;
+        padding: 0rem 0rem;
+        margin-top: 0 ;
+        padding-top: 2rem;
+
+
+        .titleHighlight{
+            font-weight: $h1-bold;
+        }
+    }
+}
+
+
+.whyDesign{
+    #whyDesignImage{
+        width: 60rem;
+        height: 30rem;
+    }
+
+    #whyDesignText{
+        h3{
+            color: $main-color;
+            font-size: $h3;
+            line-height: $h3-line-height;
+        }
+
+        p{
+            font-size: $p;
+            line-height: $p-line-height;
+            letter-spacing: $p-spacing;
+        }
+    }
+}
+
+.thisis{
+    #thisisImage{
+        width: 60rem;
+        height: 30rem;
+    }
+
+    #thisisText{
+        h3{
+            color: $main-color;
+            font-size: $h3;
+            line-height: $h3-line-height;
+        }
+
+        p{
+            font-size: $p;
+            line-height: $p-line-height;
+            letter-spacing: $p-spacing;
+        }
+    }
+}
+
+/* ------------------- Grids index ------------------*/
+
+.whyDesign{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "whyDesignImage whyDesignText";
+    padding: 5rem 10rem;
+    align-items: start;
+}
+
+#whyDesignImage{
+    grid-area: whyDesignImage;
+    justify-self: end;
+}
+
+#whyDesignText{
+    grid-area: whyDesignText;
+    justify-self: start;
+    padding-left: 2rem;
+
+        p {
+            padding: 2rem 0rem;
+        }
+}
+
+.thisis{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "thisisText ThisisImage";
+    padding: 5rem 10rem;
+    align-items: start;
+}
+
+#thisisText{
+    grid-area: thisisText;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2rem;
+
+        p{
+            padding: 2rem 0rem;
+            text-align: right;
+        }
+}
+
+#thisisImage{
+    grid-area: ThisisImage;
+    justify-self: start;
+}
+
+/* footer */
+
+footer{
+    
+    ul{
+    font-size: $p;
+    text-align: center;
+    font-family:'Work Sans', sans-serif ;
+    background-color: $dark-color;
+    padding: 0px 1rem;
+    margin: 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". services portfolio logo blog contactus ."
+    ;
+    align-items: center;
+
+
+        li{
+            list-style: none;
+            
+            a{
+            color: $light-color;
+            font-size: $p;
+            font-weight: $p-font-weight;
+            text-decoration: none;
+            
+
+                &:hover{
+                    color: $secundary-color;
+                }
+            }
+        }
+    }
+}
+
+#services{
+    grid-area: services;
+}
+
+#portfolio {
+    grid-area: portfolio;
+}
+
+#logotype{
+    grid-area: logo;
+}
+
+#blog{
+    grid-area: blog;
+}
+
+#contactus{
+    grid-area: contactus;
+}
+
+/* cierre footer */
+@import "MediaQ";

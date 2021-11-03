@@ -1,0 +1,645 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  /* 1rem=10px*/ }
+
+body {
+  font-family: 'Work Sans', sans-serif; }
+
+header {
+  background-color: #333333;
+  padding: 0.5rem 15rem;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%; }
+  header nav {
+    background-color: #333333; }
+    header nav #navbarNav {
+      align-items: baseline;
+      /*Alinear items de nav*/ }
+    header nav li {
+      list-style: none;
+      padding: 0px 2rem; }
+      header nav li a {
+        color: #E5E5E5;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-decoration: none; }
+        header nav li a:hover {
+          color: #66FFCC;
+          transition: all 0.3 ease 0; }
+
+.logo {
+  cursor: pointer; }
+
+.menuButton {
+  color: #E5E5E5;
+  background-color: #5D5FEF;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 1.8rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer; }
+  .menuButton:hover {
+    color: #5D5FEF;
+    background-color: #66FFCC;
+    font-weight: 500;
+    transition: 0.3s; }
+
+.designButton {
+  background-color: #5D5FEF;
+  border: none;
+  color: #E5E5E5;
+  padding: 0.8rem 1.2rem;
+  margin: 2rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: 'Work Sans', sans-serif;
+  border-radius: 2rem;
+  width: 15rem; }
+  .designButton:hover {
+    color: #5D5FEF;
+    background-color: #66FFCC;
+    font-weight: 500;
+    transition: 0.3s; }
+
+.thisisButton {
+  background-color: #5D5FEF;
+  border: none;
+  color: #E5E5E5;
+  padding: 0.8rem 1.2rem;
+  margin: 2rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: 'Work Sans', sans-serif;
+  border-radius: 2rem;
+  width: 15rem; }
+  .thisisButton:hover {
+    color: #5D5FEF;
+    background-color: #66FFCC;
+    font-weight: 500;
+    transition: 0.3s; }
+
+/* ----------Animación-------- */
+h1 {
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+h2 {
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.video {
+  width: 100vw; }
+
+main {
+  background-color: #E5E5E5;
+  height: 35rem;
+  width: 100%;
+  padding: 0rem 10rem; }
+  main h1 {
+    color: #333333;
+    font-size: 4.2rem;
+    font-weight: 400;
+    letter-spacing: 1.6rem;
+    line-height: 5rem;
+    text-align: left;
+    padding: 0rem 0rem;
+    margin-top: 0; }
+    main h1 .titleHighlight {
+      font-weight: 500; }
+  main h2 {
+    color: #333333;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    line-height: 5rem;
+    text-align: left;
+    padding: 0rem 0rem;
+    margin-top: 0;
+    padding-top: 2rem; }
+    main h2 .titleHighlight {
+      font-weight: 500; }
+
+.whyDesign #whyDesignImage {
+  width: 60rem;
+  height: 30rem; }
+
+.whyDesign #whyDesignText h3 {
+  color: #5D5FEF;
+  font-size: 2.6rem;
+  line-height: 2rem; }
+
+.whyDesign #whyDesignText p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 5.5%; }
+
+.thisis #thisisImage {
+  width: 60rem;
+  height: 30rem; }
+
+.thisis #thisisText h3 {
+  color: #5D5FEF;
+  font-size: 2.6rem;
+  line-height: 2rem; }
+
+.thisis #thisisText p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 5.5%; }
+
+/* ------------------- Grids index ------------------*/
+.whyDesign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "whyDesignImage whyDesignText";
+  padding: 5rem 10rem;
+  align-items: start; }
+
+#whyDesignImage {
+  grid-area: whyDesignImage;
+  justify-self: end; }
+
+#whyDesignText {
+  grid-area: whyDesignText;
+  justify-self: start;
+  padding-left: 2rem; }
+  #whyDesignText p {
+    padding: 2rem 0rem; }
+
+.thisis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "thisisText ThisisImage";
+  padding: 5rem 10rem;
+  align-items: start; }
+
+#thisisText {
+  grid-area: thisisText;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 2rem; }
+  #thisisText p {
+    padding: 2rem 0rem;
+    text-align: right; }
+
+#thisisImage {
+  grid-area: ThisisImage;
+  justify-self: start; }
+
+/* footer */
+footer ul {
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #333333;
+  padding: 0px 1rem;
+  margin: 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: ". services portfolio logo blog contactus .";
+  align-items: center; }
+  footer ul li {
+    list-style: none; }
+    footer ul li a {
+      color: #E5E5E5;
+      font-size: 1.6rem;
+      font-weight: 400;
+      text-decoration: none; }
+      footer ul li a:hover {
+        color: #66FFCC; }
+
+#services {
+  grid-area: services; }
+
+#portfolio {
+  grid-area: portfolio; }
+
+#logotype {
+  grid-area: logo; }
+
+#blog {
+  grid-area: blog; }
+
+#contactus {
+  grid-area: contactus; }
+
+/* cierre footer */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 0.5rem 7.5rem; }
+  main {
+    height: auto;
+    width: 100%;
+    padding-left: 10rem; }
+  .whyDesign {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "whyDesignImage" "whyDesignText";
+    padding: 0rem 0rem;
+    align-items: center; }
+  #whyDesignImage {
+    grid-area: whyDesignImage;
+    justify-self: center; }
+  #whyDesignText {
+    grid-area: whyDesignText;
+    justify-self: left;
+    padding: 1rem 10rem; }
+    #whyDesignText p {
+      padding: 2rem 0rem; }
+  .thisis {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ThisisImage" "thisisText";
+    padding: 5rem 10rem;
+    align-items: center; }
+    .thisis p {
+      padding: 2rem 0rem; }
+  #thisisText {
+    grid-area: thisisText;
+    justify-self: center;
+    padding: 1rem 0rem; }
+  #thisisImage {
+    grid-area: ThisisImage;
+    justify-self: center; } }
+
+@media only screen and (max-width: 426px) {
+  header {
+    padding: 0.5rem 6rem; }
+  main {
+    height: auto;
+    width: 100%;
+    padding: 0rem 6rem; }
+    main h1 {
+      font-size: 4.2rem;
+      line-height: 4rem;
+      letter-spacing: 1rem; }
+    main h2 {
+      font-size: 3rem;
+      line-height: 4rem;
+      letter-spacing: 0.7rem; }
+  .whyDesign {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "whyDesignImage" "whyDesignText";
+    padding: 1rem 1rem;
+    align-items: center; }
+    .whyDesign p {
+      padding: 2rem 0rem; }
+  #whyDesignImage {
+    grid-area: whyDesignImage;
+    justify-self: center;
+    width: 90vw !important;
+    height: auto !important;
+    padding: 0rem 0.5rem; }
+  #whyDesignText {
+    grid-area: whyDesignText;
+    justify-self: center;
+    padding: 1rem 0.5rem; }
+  .thisis {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "ThisisImage" "thisisText";
+    padding: 1rem 1rem;
+    align-items: center; }
+    .thisis p {
+      padding: 2rem 0rem; }
+  #thisisText {
+    grid-area: thisisText;
+    justify-self: center;
+    padding: 1rem 0.5rem; }
+  #thisisImage {
+    grid-area: ThisisImage;
+    justify-self: center;
+    width: 90vw !important;
+    height: auto !important; }
+  footer {
+    font-size: 0.8rem; } }
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 0.5rem 7.5rem; }
+  main {
+    height: auto;
+    width: 100%;
+    padding-left: 10rem; }
+  .whyDesign {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "whyDesignImage" "whyDesignText";
+    padding: 0rem 0rem;
+    align-items: center; }
+  #whyDesignImage {
+    grid-area: whyDesignImage;
+    justify-self: center; }
+  #whyDesignText {
+    grid-area: whyDesignText;
+    justify-self: left;
+    padding: 1rem 10rem; }
+    #whyDesignText p {
+      padding: 2rem 0rem; }
+  .thisis {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ThisisImage" "thisisText";
+    padding: 5rem 10rem;
+    align-items: center; }
+    .thisis p {
+      padding: 2rem 0rem; }
+  #thisisText {
+    grid-area: thisisText;
+    justify-self: center;
+    padding: 1rem 0rem; }
+  #thisisImage {
+    grid-area: ThisisImage;
+    justify-self: center; } }
+
+@media only screen and (max-width: 426px) {
+  header {
+    padding: 0.5rem 6rem; }
+  main {
+    height: auto;
+    width: 100%;
+    padding: 0rem 6rem; }
+    main h1 {
+      font-size: 4.2rem;
+      line-height: 4rem;
+      letter-spacing: 1rem; }
+    main h2 {
+      font-size: 3rem;
+      line-height: 4rem;
+      letter-spacing: 0.7rem; }
+  .whyDesign {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "whyDesignImage" "whyDesignText";
+    padding: 1rem 1rem;
+    align-items: center; }
+    .whyDesign p {
+      padding: 2rem 0rem; }
+  #whyDesignImage {
+    grid-area: whyDesignImage;
+    justify-self: center;
+    width: 90vw !important;
+    height: auto !important;
+    padding: 0rem 0.5rem; }
+  #whyDesignText {
+    grid-area: whyDesignText;
+    justify-self: center;
+    padding: 1rem 0.5rem; }
+  .thisis {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "ThisisImage" "thisisText";
+    padding: 1rem 1rem;
+    align-items: center; }
+    .thisis p {
+      padding: 2rem 0rem; }
+  #thisisText {
+    grid-area: thisisText;
+    justify-self: center;
+    padding: 1rem 0.5rem; }
+  #thisisImage {
+    grid-area: ThisisImage;
+    justify-self: center;
+    width: 90vw !important;
+    height: auto !important; }
+  footer {
+    font-size: 0.8rem; } }
+
+.services {
+  padding: 2rem 10rem; }
+  .services h1 {
+    color: #333333;
+    font-size: 4.2rem;
+    font-weight: 400;
+    letter-spacing: 1.6rem;
+    line-height: 5rem;
+    text-align: left; }
+  .services p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 5.5%; }
+
+.serviceTable {
+  text-align: left; }
+  .serviceTable th {
+    padding-right: 15rem;
+    font-size: 2.6rem;
+    line-height: 2rem;
+    padding: 0.7rem 0rem; }
+  .serviceTable td {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 5.5%; }
+
+.blog {
+  padding: 3rem 10rem;
+  color: #333333;
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: 1.6rem;
+  line-height: 5rem;
+  text-align: left; }
+
+/*----------------- Grids Blog --------------------*/
+.blogArticles {
+  display: grid;
+  font-family: 'Work Sans', sans-serif;
+  grid-template-columns: 50rem 50rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "first second" "third fourth";
+  justify-items: start;
+  padding: 0rem 0rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem; }
+
+.firstBlog {
+  grid-area: first; }
+
+.secondBlog {
+  grid-area: second; }
+
+.thirdBlog {
+  grid-area: third; }
+
+.fourthBlog {
+  grid-area: fourth; }
+
+/*----------------- First article Grids Blog --------------------*/
+.firstBlog {
+  display: grid;
+  font-family: 'Work Sans', sans-serif;
+  grid-template-columns: 1fr;
+  grid-template-rows: 23rem 2rem 5rem 2rem;
+  grid-template-areas: "image" "date" "title" "button";
+  justify-items: start;
+  padding: 0rem 10rem; }
+
+.firstBlogImage {
+  grid-area: image; }
+
+.firstBlogDate {
+  grid-area: date;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: normal; }
+
+.firstBlogTitle {
+  grid-area: title;
+  font-size: 1.8rem;
+  color: #333333; }
+
+.firstBlogButton {
+  grid-area: button;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #5D5FEF;
+  border: none;
+  background-color: #ffffff; }
+
+.firstBlogButton:hover {
+  font-weight: bold; }
+
+/*----------------- Second article Grids Blog --------------------*/
+.secondBlog {
+  display: grid;
+  font-family: 'Work Sans', sans-serif;
+  grid-template-columns: 1fr;
+  grid-template-rows: 23rem 2rem 5rem 2rem;
+  grid-template-areas: "image" "date" "title" "button";
+  justify-items: start;
+  padding: 0rem 10rem; }
+
+.secondBlogImage {
+  grid-area: image; }
+
+.secondBlogDate {
+  grid-area: date;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: normal; }
+
+.secondBlogTitle {
+  grid-area: title;
+  font-size: 1.8rem;
+  color: #333333; }
+
+.secondBlogButton {
+  grid-area: button;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #5D5FEF;
+  border: none;
+  background-color: #ffffff; }
+
+.secondBlogButton:hover {
+  font-weight: bold; }
+
+/*----------------- Third article Grids Blog --------------------*/
+.thirdBlog {
+  display: grid;
+  font-family: 'Work Sans', sans-serif;
+  grid-template-columns: 1fr;
+  grid-template-rows: 23rem 2rem 5rem 2rem;
+  grid-template-areas: "image" "date" "title" "button";
+  justify-items: start;
+  padding: 0rem 10rem; }
+
+.thirdBlogImage {
+  grid-area: image; }
+
+.thirdBlogDate {
+  grid-area: date;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: normal; }
+
+.thirdBlogTitle {
+  grid-area: title;
+  font-size: 1.8rem;
+  color: #333333; }
+
+.thirdBlogButton {
+  grid-area: button;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #5D5FEF;
+  border: none;
+  background-color: #ffffff; }
+
+.thirdBlogButton:hover {
+  font-weight: bold; }
+
+/*----------------- fourth article Grids Blog --------------------*/
+.fourthBlog {
+  display: grid;
+  font-family: 'Work Sans', sans-serif;
+  grid-template-columns: 1fr;
+  grid-template-rows: 23rem 2rem 5rem 2rem;
+  grid-template-areas: "image" "date" "title" "button";
+  justify-items: start;
+  padding: 0rem 10rem; }
+
+.fourthBlogImage {
+  grid-area: image; }
+
+.fourthBlogDate {
+  grid-area: date;
+  font-size: 1rem;
+  color: #333333;
+  font-weight: normal; }
+
+.fourthBlogTitle {
+  grid-area: title;
+  font-size: 1.8rem;
+  color: #333333; }
+
+.fourthBlogButton {
+  grid-area: button;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #5D5FEF;
+  border: none;
+  background-color: #ffffff; }
+
+.fourthBlogButton:hover {
+  font-weight: bold; }
