@@ -21,11 +21,18 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
-@import "menu";
+
 @import "buttons";
 @import "index";
 @import "MediaQ";
 @import "services";
 @import "blog";
+@import "menu";
+@import "footer";
+@import "portfolio";
+
+.error{
+    width: 100vw;
+}
 
 

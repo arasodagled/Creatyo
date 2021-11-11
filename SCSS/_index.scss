@@ -24,14 +24,14 @@ h2{
 }
 
 .video{
-    width: 100vw;
+    padding: 0rem 0rem;
 }
 
 main{
-    background-color: $light-color;
-    height: 35rem;
+    background-color: #ffffff;
+    height: auto;
     width: 100%;
-    padding: 0rem 10rem;
+    padding: $main-up-padding $sides-padding;
 
     h1{
         color: $dark-color;
@@ -40,11 +40,12 @@ main{
         letter-spacing: $h1-spacing;
         line-height: $h1-line-height;
         text-align: left;
-        padding: 0rem 0rem;
+        // padding: 0rem 0rem;
         margin-top: 0 ;
 
         .titleHighlight{
             font-weight: $h1-bold;
+
         }
     }
 
@@ -55,7 +56,7 @@ main{
         letter-spacing: $h2-spacing;
         line-height: $h2-line-height;
         text-align: left;
-        padding: 0rem 0rem;
+        // padding: 0rem 0rem;
         margin-top: 0 ;
         padding-top: 2rem;
 
@@ -75,15 +76,17 @@ main{
 
     #whyDesignText{
         h3{
-            color: $main-color;
+            color: $dark-color;
             font-size: $h3;
             line-height: $h3-line-height;
         }
 
         p{
             font-size: $p;
+            color: $dark-color;
             line-height: $p-line-height;
             letter-spacing: $p-spacing;
+            font-weight: $p-font-weight;
         }
     }
 }
@@ -96,15 +99,17 @@ main{
 
     #thisisText{
         h3{
-            color: $main-color;
+            color: $dark-color;
             font-size: $h3;
             line-height: $h3-line-height;
         }
 
         p{
             font-size: $p;
+            color: $dark-color;
             line-height: $p-line-height;
             letter-spacing: $p-spacing;
+            font-weight: $p-font-weight;
         }
     }
 }
@@ -117,13 +122,13 @@ main{
     grid-template-rows: 1fr ;
     grid-template-areas: 
     "whyDesignImage whyDesignText";
-    padding: 5rem 10rem;
-    align-items: start;
+    padding: 5rem $sides-padding;
+    align-items: center;
 }
 
 #whyDesignImage{
     grid-area: whyDesignImage;
-    justify-self: end;
+    justify-self: start;
 }
 
 #whyDesignText{
@@ -142,8 +147,8 @@ main{
     grid-template-rows: 1fr ;
     grid-template-areas: 
     "thisisText ThisisImage";
-    padding: 5rem 10rem;
-    align-items: start;
+    padding: 5rem $sides-padding;
+    align-items: center;
 }
 
 #thisisText{
@@ -161,66 +166,7 @@ main{
 
 #thisisImage{
     grid-area: ThisisImage;
-    justify-self: start;
+    justify-self: end;
 }
 
-/* footer */
-
-footer{
-    
-    ul{
-    font-size: $p;
-    text-align: center;
-    font-family:'Work Sans', sans-serif ;
-    background-color: $dark-color;
-    padding: 0px 1rem;
-    margin: 0px 0px;
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    ". services portfolio logo blog contactus ."
-    ;
-    align-items: center;
-
-
-        li{
-            list-style: none;
-            
-            a{
-            color: $light-color;
-            font-size: $p;
-            font-weight: $p-font-weight;
-            text-decoration: none;
-            
-
-                &:hover{
-                    color: $secundary-color;
-                }
-            }
-        }
-    }
-}
-
-#services{
-    grid-area: services;
-}
-
-#portfolio {
-    grid-area: portfolio;
-}
-
-#logotype{
-    grid-area: logo;
-}
-
-#blog{
-    grid-area: blog;
-}
-
-#contactus{
-    grid-area: contactus;
-}
-
-/* cierre footer */
 @import "MediaQ";

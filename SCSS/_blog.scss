@@ -1,8 +1,8 @@
 .blog{
-    padding: 3rem 10rem;
+    padding: $up-padding $sides-padding;
     color: $dark-color;
     font-size: $h1;
-    font-weight: $h1-weight;
+    font-weight: $h1-bold;
     letter-spacing: $h1-spacing;
     line-height: $h1-line-height;
     text-align: left;
@@ -13,14 +13,14 @@
 .blogArticles{
     display: grid;
     font-family:'Work Sans', sans-serif ;
-    grid-template-columns: 50rem 50rem;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "first second"
-    "third fourth"
+    ". first second ."
+    ". third fourth ."
     ;
     justify-items: start;
-    padding: 0rem 0rem;
+    padding: 0rem 18rem;
     grid-column-gap: 2rem;
     grid-row-gap: 6rem;
 }
@@ -64,14 +64,14 @@
 
 .firstBlogDate{
     grid-area: date;
-    font-size: 1rem;
+    font-size: $h5;
     color: $dark-color;
-    font-weight: normal;
+    font-weight: $h5-font-weight;
 }
 
 .firstBlogTitle{
     grid-area: title;
-    font-size: 1.8rem;
+    font-size: $p;
     color: $dark-color;
 }
 
@@ -111,9 +111,9 @@
 
 .secondBlogDate{
     grid-area: date;
-    font-size: 1rem;
+    font-size: $h5;
     color: $dark-color;
-    font-weight: normal;
+    font-weight: $h5-font-weight;
 }
 
 .secondBlogTitle{
@@ -158,9 +158,9 @@
 
 .thirdBlogDate{
     grid-area: date;
-    font-size: 1rem;
+    font-size: $h5;
     color: $dark-color;
-    font-weight: normal;
+    font-weight: $h5-font-weight;
 }
 
 .thirdBlogTitle{
@@ -205,9 +205,9 @@
 
 .fourthBlogDate{
     grid-area: date;
-    font-size: 1rem;
+    font-size: $h5;
     color: $dark-color;
-    font-weight: normal;
+    font-weight: $h5-font-weight;
 }
 
 .fourthBlogTitle{

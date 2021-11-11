@@ -1,6 +1,6 @@
 .services{
 
-    padding: 2rem 10rem;
+    padding: $up-padding $sides-padding;
 
     h1{
         color: $dark-color;
@@ -19,13 +19,15 @@
         
 }
 
+
 .serviceTable{
     text-align: left;
+    
 
         th{
-            padding-right: 15rem;
-            font-size: $h3;
-            line-height: $h3-line-height;
+
+            font-size: $p;
+            line-height: $p-line-height;
             padding: 0.7rem 0rem;
         }
 
@@ -33,6 +35,10 @@
             font-size: $p;
             line-height: $p-line-height;
             letter-spacing: $p-spacing;
+        }
+
+        .serviceTableHead{
+            padding-right: 15rem;
         }
 }
 

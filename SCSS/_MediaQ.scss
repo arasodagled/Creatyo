@@ -73,7 +73,7 @@
 {
 
     header{
-        padding:0.5rem 6rem;
+        padding:0.5rem $sides-padding-mobile;
     }
 
     main{
@@ -157,6 +157,41 @@
     }
 
     footer{
-        font-size: 0.8rem;
+        font-size: 0.4rem;
+
+        #logotype{
+            padding-left: $sides-padding-mobile;
+        }
+        
+        #social{
+            padding: 0rem $sides-padding-mobile;
+        }
+    }
+
+    .portfolio{
+
+        .portfolioCards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "explora"
+        "designit"
+        "academia"
+        ;
+        }
+
+        .explora{
+            grid-area: explora;
+    
+        }
+    
+        .designit{
+            grid-area: designit;
+        }
+    
+        .academia{
+            grid-area: academia;
+        }
     }
 }

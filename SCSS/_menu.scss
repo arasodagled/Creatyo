@@ -1,6 +1,6 @@
 header{ 
     background-color: $dark-color;
-    padding: 0.5rem 15rem;
+    padding: $menu-padding $sides-padding;
     font-family: 'Work Sans', sans-serif;
     display: flex;
     flex-direction: row;
@@ -9,34 +9,41 @@ header{
     position: sticky;
     top: 0;
     width: 100%;
-    // height: 5.5rem;   /*altura header */
+    z-index: 10; /* Capas como illustrator, hace que el menu este por encima de todo */
+
+    a{
+        .logo{
+            background-color: $light-color;
+
+            &:hover{
+            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            }
+
+        }
+    }
     
 
 
     nav{
         background-color: $dark-color;
-
-
-        #navbarNav{
-            align-items: baseline; /*Alinear items de nav*/
-        }
         
         li{
             list-style: none;
             // display: inline-block;  /*items side by side*/
-            padding: 0px 2rem;
+            padding: $menu-padding $list-padding;
 
             a{
                 color: $light-color;
-                font-size: $p;
-                font-weight: $p-font-weight;
+                font-size: $pmenu;
+                font-weight: $p-font-weight-menu;
                 text-decoration: none;
-
+                align-items: baseline; /*Alinear items de nav*/
 
                 &:hover{
                     color: $secundary-color;
                     transition: all 0.3 ease 0;
                 }
+
             }
         }
     }

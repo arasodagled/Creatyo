@@ -1,13 +1,16 @@
 // font-size
 $h1: 4.2rem;
-$h2: 3rem;
+$h2: 4.2rem;
 $h3: 2.6rem;
-$p: 1.6rem;
+$h5: 1.4rem;
+$p: 1.8rem;
+$pmenu: 1.6rem;
+
 
 // h1
-$h1-spacing: 1.6rem;
+$h1-spacing: 0.2rem;
 $h1-line-height: 5rem;
-$h1-weight: 400;
+$h1-weight: 300;
 $h1-bold: 500;
 
 // Responsive
@@ -18,10 +21,10 @@ $h1R-weight: 400;
 $h1R-bold: 500;
 
 // h2
-$h2-spacing: 0.1rem;
-$h2-line-height: 5rem;
-$h2-weight: 400;
-$h2-bold: 200;
+$h2-spacing: 0rem;
+$h2-line-height: 6rem;
+$h2-weight: 300;
+$h2-bold: 500;
 
 // Responsive
 $h2R: 3rem;
@@ -32,12 +35,46 @@ $h2R-bold: 500;
 
 // h3
 $h3-spacing: 1rem;
-$h3-line-height: 2rem;
-$h3-weight: 300;
+$h3-line-height: 3rem;
+$h3-weight: 200;
 $h3-bold: 500;
 
+// h5
+$h5-spacing: 0rem;
+$h5-line-height: 2.5rem;
+$h5-font-weight: normal;
+$h5-bold: 500;
+
 // p
-$p-spacing: 5.5%;
+$p-spacing: 0rem;
 $p-line-height: 2.5rem;
 $p-font-weight: 400;
 $p-bold: 500;
+$p-font-weight-menu: 300;
+
+
+
+// Paddings
+
+$up-padding: 4rem;
+$down-padding: 2rem;
+$sides-padding: 14rem;
+
+    // Menu padding
+    $menu-padding: 0.5rem;
+    $list-padding: 2rem;
+
+    // Button paddings
+    $bb-radius: 3rem;
+    $b-up-padding: 0.8rem;
+    $b-sides-padding: 1.8rem;
+    $b-width: 14rem;
+
+    // Index paddings
+    $main-up-padding: 8rem;
+
+    // Mobile
+    $sides-padding-mobile: 2rem;
+
+
+
