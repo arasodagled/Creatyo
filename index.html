@@ -10,9 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <meta name="keywords" content="design, strategy, branding, logo, naming, social media">
 
     <meta name="description" content="We are a brand strategy and design studio that believes everything should and needs to be design">
+
+    
     
 </head>
 <body>
@@ -32,12 +38,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                 
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./Pages/Services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./Pages/Portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./Pages/Blog.html">Blog</a></li>
+                    <li class="nav-item"><a  href="./index.html">Home</a></li>
+                    <li class="nav-item"><a  href="./Pages/Services.html">Services</a></li>
+                    <li class="nav-item"><a  href="./Pages/Portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a  href="./Pages/Blog.html">Blog</a></li>
                 </ul>
-                <a class="cta" href="./Pages/Contact.html"><button class="menuButton">Contact</button></a>
+                <a class="cta" href="./Pages/404.html"><button class="menuButton">Contact</button></a>
+                
             
                 </div>
             </div>
@@ -46,21 +53,76 @@
                 
     </header>
 
-    <img class="video" src="./Media/Video-coming-soon.png" alt="portada imagen creatyo">
+
+    <div id="carouselExampleCaptions" class="carousel slide video" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            
+            <video class="d-block w-100" controls autoplay muted loop>
+                <source src="./Media/CreatingVideo.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+            <h1>Creating products and services</h1>
+            <br>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <video class="d-block w-100" controls autoplay muted loop>
+                <source src="./Media/EmpoweringVideo.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+            <h1>Empowering brands</h1>
+            <br>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <video class="d-block w-100" controls autoplay muted loop>
+                <source src="./Media/DesigningVideo.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+            <h1>Designing simplicity</h1>
+            <br>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <video class="d-block w-100" controls autoplay muted loop>
+                <source src="./Media/SparkingVideo.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+            <h1>Sparking creativity</h1>
+            <br>
+            </div>
+        </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
             
             <main>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1>We are a <br>
-                    <strong class="titleHighlight">brand strategy</strong> and <br>
-                    <strong class="titleHighlight">design studio</strong></h1>
-                <h2>Together, we’ll take your company from ordinary to extraordinary</h2>
-                <br>
-                <br>
-                <br>
-                <br>
+
+                <h1>We are a
+                    <strong class="titleHighlight">brand strategy</strong> and
+                    <strong class="titleHighlight">design studio.</strong></h1> <br>
+                    <br>
+                <h2>Together, we’ll take your company from ordinary to extraordinary, but first, we want you to see why we believe everything can and should be design.</h2>
+
             </main>
 
 
@@ -74,6 +136,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis facilis voluptatibus, ab rem sit, dolorum reprehenderit sunt dolore officiis alias molestiae minima? Exercitationem iure accusantium commodi fugit libero rerum quae!
                     Fuga nulla suscipit vitae ab sunt, asperiores culpa minima alias velit provident? Sapiente, iure esse? Rerum, eius praesentium impedit, natus veritatis possimus maiores perferendis ut accusantium itaque mollitia cumque! Dolor.</p>
                     <button class="designButton">Learn more</button>
+                    
                 </div>
             </section>
 
@@ -92,15 +155,38 @@
 
         <footer>
             <ul id="footer">
-                <li></li>
-                <li><a id="services" href="./Pages/services.html">Services</a></li>
-                <li><a id="portfolio" href="./Pages/portfolio.html">Portfolio</a></li>
-                <li><a id="logotype" href="./Index.html">
-                    <img src="./Media/logotype.png" alt="logotype">
-                </a></li>
-                <li><a id="blog" href="./Pages/blog.html">  Blog  </a></li>
-                <li><a id="contactus" href="./Pages/contact us.html">Contact</a></li>
-                <li></li>
+                <div>
+                    <li>
+                        
+                    </li>
+                </div>
+
+                <div id="logotype">
+                    <li>
+                        <img src="./Media/logotype.png" alt="logotype">© 2021 Creatyo, Inc
+                    </li>
+                </div>
+
+                <div>
+                    <li>
+                        
+                    </li>
+                </div>
+
+
+                <div id="social">
+
+                        <li><a id="insta" href="./Pages/portfolio.html"><i class="fa fa-instagram insta" style="font-size:24px"></i></a></li>
+
+                    
+                    <li><a id="mail" href="./Pages/blog.html">
+                        <i class="fa fa-envelope mail" style="font-size:24px"></i>
+                    </a></li>
+                    <li><a id="face" href="./Pages/contact us.html">
+                        <i class="fa fa-facebook face" style="font-size:24px"></i>
+                    </a></li>
+                    <li></li>
+                </div>
             </ul> 
         </footer>
     

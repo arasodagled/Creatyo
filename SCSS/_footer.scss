@@ -1,0 +1,72 @@
+
+footer{
+    background-color: $dark-color;
+
+    ul{
+    height: 10rem;
+    text-align: center;
+    font-family:'Work Sans', sans-serif ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo social"
+    ;
+    align-items: center;
+
+        hr{
+            background-color: aquamarine;
+        }
+
+        li{
+            list-style: none;
+            display: inline;
+
+            
+            a{
+            color: $light-color;
+            font-size: $pmenu;
+            font-weight: $p-font-weight-menu;
+            text-decoration: none;
+
+                &:hover{
+                    color: $secundary-color;
+                }
+            }
+        }
+    }
+}
+
+#logotype{
+    grid-area: logo;
+    justify-self: start;
+    padding-left: $sides-padding;
+
+        li{
+            color: $light-color;
+            font-size: $pmenu;
+            font-weight: $p-font-weight-menu;
+        }
+}
+
+#social {
+    grid-area: social;
+    justify-self: end;
+    padding: 0rem $sides-padding;
+    color: $light-color;
+
+    #mail{
+        padding-left: 1.5rem;
+    }
+
+    #face{
+        padding-left: 1.5rem;
+    }
+
+        &:hover{
+            color: $secundary-color;
+        }
+    
+}
+
+

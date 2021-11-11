@@ -12,92 +12,61 @@ html {
 body {
   font-family: 'Work Sans', sans-serif; }
 
-header {
-  background-color: #333333;
-  padding: 0.5rem 15rem;
-  font-family: 'Work Sans', sans-serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  width: 100%; }
-  header nav {
-    background-color: #333333; }
-    header nav #navbarNav {
-      align-items: baseline;
-      /*Alinear items de nav*/ }
-    header nav li {
-      list-style: none;
-      padding: 0px 2rem; }
-      header nav li a {
-        color: #E5E5E5;
-        font-size: 1.6rem;
-        font-weight: 400;
-        text-decoration: none; }
-        header nav li a:hover {
-          color: #66FFCC;
-          transition: all 0.3 ease 0; }
-
-.logo {
-  cursor: pointer; }
-
 .menuButton {
-  color: #E5E5E5;
-  background-color: #5D5FEF;
+  color: #333333;
+  background-color: #E5E5E5;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 300;
   text-decoration: none;
   border: none;
-  border-radius: 2rem;
+  border-radius: 3rem;
   padding: 0.8rem 1.8rem;
   text-align: center;
   display: inline-block;
   cursor: pointer; }
   .menuButton:hover {
-    color: #5D5FEF;
-    background-color: #66FFCC;
-    font-weight: 500;
-    transition: 0.3s; }
+    color: #333333;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-weight: 300;
+    transition: all 0.3 ease 0; }
 
 .designButton {
-  background-color: #5D5FEF;
+  background-color: #E5E5E5;
   border: none;
-  color: #E5E5E5;
-  padding: 0.8rem 1.2rem;
-  margin: 2rem 0rem;
+  font-weight: 300;
+  color: #333333;
+  padding: 0.8rem 1.8rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.6rem;
   font-family: 'Work Sans', sans-serif;
-  border-radius: 2rem;
-  width: 15rem; }
+  border-radius: 3rem;
+  width: 14rem; }
   .designButton:hover {
-    color: #5D5FEF;
-    background-color: #66FFCC;
-    font-weight: 500;
-    transition: 0.3s; }
+    color: #333333;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-weight: 300;
+    transition: all 0.3 ease 0; }
 
 .thisisButton {
-  background-color: #5D5FEF;
+  background-color: #E5E5E5;
   border: none;
-  color: #E5E5E5;
-  padding: 0.8rem 1.2rem;
-  margin: 2rem 0rem;
+  font-weight: 300;
+  color: #333333;
+  padding: 0.8rem 1.8rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.6rem;
   font-family: 'Work Sans', sans-serif;
-  border-radius: 2rem;
-  width: 15rem; }
+  border-radius: 3rem;
+  width: 14rem; }
   .thisisButton:hover {
-    color: #5D5FEF;
-    background-color: #66FFCC;
-    font-weight: 500;
-    transition: 0.3s; }
+    color: #333333;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-weight: 300;
+    transition: all 0.3 ease 0; }
 
 /* ----------Animación-------- */
 h1 {
@@ -115,32 +84,30 @@ h2 {
     opacity: 1; } }
 
 .video {
-  width: 100vw; }
+  padding: 0rem 0rem; }
 
 main {
-  background-color: #E5E5E5;
-  height: 35rem;
+  background-color: #ffffff;
+  height: auto;
   width: 100%;
-  padding: 0rem 10rem; }
+  padding: 8rem 14rem; }
   main h1 {
     color: #333333;
     font-size: 4.2rem;
-    font-weight: 400;
-    letter-spacing: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
     line-height: 5rem;
     text-align: left;
-    padding: 0rem 0rem;
     margin-top: 0; }
     main h1 .titleHighlight {
       font-weight: 500; }
   main h2 {
     color: #333333;
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: 0.1rem;
-    line-height: 5rem;
+    font-size: 4.2rem;
+    font-weight: 300;
+    letter-spacing: 0rem;
+    line-height: 6rem;
     text-align: left;
-    padding: 0rem 0rem;
     margin-top: 0;
     padding-top: 2rem; }
     main h2 .titleHighlight {
@@ -151,28 +118,32 @@ main {
   height: 30rem; }
 
 .whyDesign #whyDesignText h3 {
-  color: #5D5FEF;
+  color: #333333;
   font-size: 2.6rem;
-  line-height: 2rem; }
+  line-height: 3rem; }
 
 .whyDesign #whyDesignText p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  color: #333333;
   line-height: 2.5rem;
-  letter-spacing: 5.5%; }
+  letter-spacing: 0rem;
+  font-weight: 400; }
 
 .thisis #thisisImage {
   width: 60rem;
   height: 30rem; }
 
 .thisis #thisisText h3 {
-  color: #5D5FEF;
+  color: #333333;
   font-size: 2.6rem;
-  line-height: 2rem; }
+  line-height: 3rem; }
 
 .thisis #thisisText p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  color: #333333;
   line-height: 2.5rem;
-  letter-spacing: 5.5%; }
+  letter-spacing: 0rem;
+  font-weight: 400; }
 
 /* ------------------- Grids index ------------------*/
 .whyDesign {
@@ -180,12 +151,12 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "whyDesignImage whyDesignText";
-  padding: 5rem 10rem;
-  align-items: start; }
+  padding: 5rem 14rem;
+  align-items: center; }
 
 #whyDesignImage {
   grid-area: whyDesignImage;
-  justify-self: end; }
+  justify-self: start; }
 
 #whyDesignText {
   grid-area: whyDesignText;
@@ -199,8 +170,8 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "thisisText ThisisImage";
-  padding: 5rem 10rem;
-  align-items: start; }
+  padding: 5rem 14rem;
+  align-items: center; }
 
 #thisisText {
   grid-area: thisisText;
@@ -214,47 +185,8 @@ main {
 
 #thisisImage {
   grid-area: ThisisImage;
-  justify-self: start; }
+  justify-self: end; }
 
-/* footer */
-footer ul {
-  font-size: 1.6rem;
-  text-align: center;
-  font-family: 'Work Sans', sans-serif;
-  background-color: #333333;
-  padding: 0px 1rem;
-  margin: 0px 0px;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: ". services portfolio logo blog contactus .";
-  align-items: center; }
-  footer ul li {
-    list-style: none; }
-    footer ul li a {
-      color: #E5E5E5;
-      font-size: 1.6rem;
-      font-weight: 400;
-      text-decoration: none; }
-      footer ul li a:hover {
-        color: #66FFCC; }
-
-#services {
-  grid-area: services; }
-
-#portfolio {
-  grid-area: portfolio; }
-
-#logotype {
-  grid-area: logo; }
-
-#blog {
-  grid-area: blog; }
-
-#contactus {
-  grid-area: contactus; }
-
-/* cierre footer */
 @media only screen and (max-width: 768px) {
   header {
     padding: 0.5rem 7.5rem; }
@@ -297,7 +229,7 @@ footer ul {
 
 @media only screen and (max-width: 426px) {
   header {
-    padding: 0.5rem 6rem; }
+    padding: 0.5rem 2rem; }
   main {
     height: auto;
     width: 100%;
@@ -348,7 +280,22 @@ footer ul {
     width: 90vw !important;
     height: auto !important; }
   footer {
-    font-size: 0.8rem; } }
+    font-size: 0.4rem; }
+    footer #logotype {
+      padding-left: 2rem; }
+    footer #social {
+      padding: 0rem 2rem; }
+  .portfolio .portfolioCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "explora" "designit" "academia"; }
+  .portfolio .explora {
+    grid-area: explora; }
+  .portfolio .designit {
+    grid-area: designit; }
+  .portfolio .academia {
+    grid-area: academia; } }
 
 @media only screen and (max-width: 768px) {
   header {
@@ -392,7 +339,7 @@ footer ul {
 
 @media only screen and (max-width: 426px) {
   header {
-    padding: 0.5rem 6rem; }
+    padding: 0.5rem 2rem; }
   main {
     height: auto;
     width: 100%;
@@ -443,40 +390,56 @@ footer ul {
     width: 90vw !important;
     height: auto !important; }
   footer {
-    font-size: 0.8rem; } }
+    font-size: 0.4rem; }
+    footer #logotype {
+      padding-left: 2rem; }
+    footer #social {
+      padding: 0rem 2rem; }
+  .portfolio .portfolioCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "explora" "designit" "academia"; }
+  .portfolio .explora {
+    grid-area: explora; }
+  .portfolio .designit {
+    grid-area: designit; }
+  .portfolio .academia {
+    grid-area: academia; } }
 
 .services {
-  padding: 2rem 10rem; }
+  padding: 4rem 14rem; }
   .services h1 {
     color: #333333;
     font-size: 4.2rem;
-    font-weight: 400;
-    letter-spacing: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
     line-height: 5rem;
     text-align: left; }
   .services p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
-    letter-spacing: 5.5%; }
+    letter-spacing: 0rem; }
 
 .serviceTable {
   text-align: left; }
   .serviceTable th {
-    padding-right: 15rem;
-    font-size: 2.6rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
     padding: 0.7rem 0rem; }
   .serviceTable td {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
-    letter-spacing: 5.5%; }
+    letter-spacing: 0rem; }
+  .serviceTable .serviceTableHead {
+    padding-right: 15rem; }
 
 .blog {
-  padding: 3rem 10rem;
+  padding: 4rem 14rem;
   color: #333333;
   font-size: 4.2rem;
-  font-weight: 400;
-  letter-spacing: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
   line-height: 5rem;
   text-align: left; }
 
@@ -484,11 +447,11 @@ footer ul {
 .blogArticles {
   display: grid;
   font-family: 'Work Sans', sans-serif;
-  grid-template-columns: 50rem 50rem;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "first second" "third fourth";
+  grid-template-areas: ". first second ." ". third fourth .";
   justify-items: start;
-  padding: 0rem 0rem;
+  padding: 0rem 18rem;
   grid-column-gap: 2rem;
   grid-row-gap: 6rem; }
 
@@ -519,7 +482,7 @@ footer ul {
 
 .firstBlogDate {
   grid-area: date;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #333333;
   font-weight: normal; }
 
@@ -531,7 +494,7 @@ footer ul {
 .firstBlogButton {
   grid-area: button;
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #5D5FEF;
   border: none;
   background-color: #ffffff; }
@@ -554,7 +517,7 @@ footer ul {
 
 .secondBlogDate {
   grid-area: date;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #333333;
   font-weight: normal; }
 
@@ -566,7 +529,7 @@ footer ul {
 .secondBlogButton {
   grid-area: button;
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #5D5FEF;
   border: none;
   background-color: #ffffff; }
@@ -589,7 +552,7 @@ footer ul {
 
 .thirdBlogDate {
   grid-area: date;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #333333;
   font-weight: normal; }
 
@@ -601,7 +564,7 @@ footer ul {
 .thirdBlogButton {
   grid-area: button;
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #5D5FEF;
   border: none;
   background-color: #ffffff; }
@@ -624,7 +587,7 @@ footer ul {
 
 .fourthBlogDate {
   grid-area: date;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #333333;
   font-weight: normal; }
 
@@ -636,10 +599,125 @@ footer ul {
 .fourthBlogButton {
   grid-area: button;
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #5D5FEF;
   border: none;
   background-color: #ffffff; }
 
 .fourthBlogButton:hover {
   font-weight: bold; }
+
+header {
+  background-color: #333333;
+  padding: 0.5rem 14rem;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  /* Capas como illustrator, hace que el menu este por encima de todo */ }
+  header a .logo {
+    background-color: #E5E5E5; }
+    header a .logo:hover {
+      background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); }
+  header nav {
+    background-color: #333333; }
+    header nav li {
+      list-style: none;
+      padding: 0.5rem 2rem; }
+      header nav li a {
+        color: #E5E5E5;
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-decoration: none;
+        align-items: baseline;
+        /*Alinear items de nav*/ }
+        header nav li a:hover {
+          color: #66FFCC;
+          transition: all 0.3 ease 0; }
+
+.logo {
+  cursor: pointer; }
+
+footer {
+  background-color: #333333; }
+  footer ul {
+    height: 10rem;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo social";
+    align-items: center; }
+    footer ul hr {
+      background-color: aquamarine; }
+    footer ul li {
+      list-style: none;
+      display: inline; }
+      footer ul li a {
+        color: #E5E5E5;
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-decoration: none; }
+        footer ul li a:hover {
+          color: #66FFCC; }
+
+#logotype {
+  grid-area: logo;
+  justify-self: start;
+  padding-left: 14rem; }
+  #logotype li {
+    color: #E5E5E5;
+    font-size: 1.6rem;
+    font-weight: 300; }
+
+#social {
+  grid-area: social;
+  justify-self: end;
+  padding: 0rem 14rem;
+  color: #E5E5E5; }
+  #social #mail {
+    padding-left: 1.5rem; }
+  #social #face {
+    padding-left: 1.5rem; }
+  #social:hover {
+    color: #66FFCC; }
+
+.portfolio {
+  padding: 4rem 14rem; }
+  .portfolio h1 {
+    color: #333333;
+    font-size: 4.2rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    line-height: 5rem;
+    text-align: left;
+    padding-bottom: 4rem; }
+  .portfolio p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0rem; }
+  .portfolio .portfolioCards {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0rem;
+    line-height: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "explora designit academia"; }
+  .portfolio .explora {
+    grid-area: explora; }
+  .portfolio .designit {
+    grid-area: designit; }
+  .portfolio .academia {
+    grid-area: academia; }
+
+.error {
+  width: 100vw; }

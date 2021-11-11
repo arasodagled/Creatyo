@@ -1,0 +1,49 @@
+.portfolio{
+
+    padding: $up-padding $sides-padding;
+
+    h1{
+        color: $dark-color;
+        font-size: $h1;
+        font-weight: $h1-weight;
+        letter-spacing: $h1-spacing;
+        line-height: $h1-line-height;
+        text-align: left;
+        padding-bottom: $up-padding;
+    }
+
+    p{
+        font-size: $p;
+        line-height: $p-line-height;
+        letter-spacing: $p-spacing;
+    }
+
+    .portfolioCards{
+        font-family:'Work Sans', sans-serif ;
+        font-size: $p;
+        font-weight: $p-font-weight;
+        letter-spacing: $p-spacing;
+        line-height: $p-line-height;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "explora designit academia"
+        ;
+    }
+
+    .explora{
+        grid-area: explora;
+
+    }
+
+    .designit{
+        grid-area: designit;
+    }
+
+    .academia{
+        grid-area: academia;
+    }
+
+}
