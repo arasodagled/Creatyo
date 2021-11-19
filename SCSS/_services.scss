@@ -1,3 +1,5 @@
+@import "font";
+
 .services{
 
     padding: $up-padding $sides-padding;
@@ -5,10 +7,12 @@
     h1{
         color: $dark-color;
         font-size: $h1;
-        font-weight: $h1-weight;
         letter-spacing: $h1-spacing;
         line-height: $h1-line-height;
         text-align: left;
+        font-weight: $h1-bold;
+        padding-bottom: $down-padding;
+    
     }
 
     p{
@@ -38,9 +42,11 @@
         }
 
         .serviceTableHead{
-            padding-right: 15rem;
+            padding-right: 20rem;
         }
 }
+
+
 
 
 

@@ -1,67 +1,190 @@
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 1024px)
 {
     header{
-        padding:0.5rem 7.5rem;
+        padding: $menu-padding $sides-padding-tablet;
     }
 
     main{
         height: auto;
         width: 100%;
-        padding-left: 10rem;
+        padding: $up-padding-tablet $sides-padding-tablet;
     }
 
-    .whyDesign{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr ;
-        grid-template-areas:
-        "whyDesignImage"
-        "whyDesignText"
-        ;
-        padding: 0rem 0rem;
-        align-items: center;
-    }
+    .indexCards{
+        padding: $up-padding-tablet $sides-padding-tablet;
+    
+        .whyDesign{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-areas:
+            "whyDesignImage"
+            "whyDesignText"
+            ;
+            padding: 0rem 0rem;
+            align-items: center;
+        }
 
-    #whyDesignImage{
-        grid-area: whyDesignImage;
-        justify-self: center;
-    }
+        #whyDesignImage{
+            grid-area: whyDesignImage;
+            justify-self: center;
+        }
 
-    #whyDesignText{
-        grid-area: whyDesignText;
-        justify-self: left;
-        padding: 1rem 10rem;
+        #whyDesignText{
+            grid-area: whyDesignText;
+            text-align: center;
+            justify-self: center;
+            padding: 1rem 0rem;
 
-        p {
-            padding: 2rem 0rem;
+            p {
+                padding: 2rem 0rem;
+            }
+        }
+
+        .thisis{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+            "ThisisImage"
+            "thisisText"
+            ;
+            padding: 0rem 0rem;
+            align-items: center;
+        }
+
+        #thisisText{
+            grid-area: thisisText;
+            justify-self: center;
+            padding: 1rem 0rem;
+            text-align: center;
+            align-items: center;
+
+            p{
+                padding: 2rem 0rem;
+                text-align: center;
+            }
+        }
+
+        #thisisImage{
+            grid-area: ThisisImage;
+            justify-self: center;
         }
     }
 
-    .thisis{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-        "ThisisImage"
-        "thisisText"
-        ;
-        padding: 5rem 10rem;
-        align-items: center;
+    footer{
 
-        p{
-            padding: 2rem 0rem;
+        #logotype{
+            padding-left: $sides-padding-tablet;
+        }
+
+        #social {
+            padding: 0rem $sides-padding-tablet;
         }
     }
 
-    #thisisText{
-        grid-area: thisisText;
-        justify-self: center;
-        padding: 1rem 0rem;
+    .services{
+        padding: $up-padding-mobile $sides-padding-mobile;
     }
 
-    #thisisImage{
-        grid-area: ThisisImage;
-        justify-self: center;
+    .portfolio{
+        padding: $up-padding-mobile $sides-padding-mobile;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px)
+{
+    header{
+        padding: $menu-padding $sides-padding-tablet;
+    }
+
+    main{
+        height: auto;
+        width: 100%;
+        padding: $up-padding-tablet $sides-padding-tablet;
+    }
+
+    .indexCards{
+        padding: $up-padding-tablet $sides-padding-tablet;
+    
+        .whyDesign{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr ;
+            grid-template-areas:
+            "whyDesignImage"
+            "whyDesignText"
+            ;
+            padding: 0rem 0rem;
+            align-items: center;
+        }
+
+        #whyDesignImage{
+            grid-area: whyDesignImage;
+            justify-self: center;
+        }
+
+        #whyDesignText{
+            grid-area: whyDesignText;
+            text-align: center;
+            justify-self: center;
+            padding: 1rem 0rem;
+
+            p {
+                padding: 2rem 0rem;
+            }
+        }
+
+        .thisis{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+            "ThisisImage"
+            "thisisText"
+            ;
+            padding: 0rem 0rem;
+            align-items: center;
+        }
+
+        #thisisText{
+            grid-area: thisisText;
+            justify-self: center;
+            padding: 1rem 0rem;
+            text-align: center;
+            align-items: center;
+
+            p{
+                padding: 2rem 0rem;
+                text-align: center;
+            }
+        }
+
+        #thisisImage{
+            grid-area: ThisisImage;
+            justify-self: center;
+        }
+    }
+
+    footer{
+
+        #logotype{
+            padding-left: $sides-padding-tablet;
+        }
+
+        #social {
+            padding: 0rem $sides-padding-tablet;
+        }
+    }
+
+    .services{
+        padding: $up-padding-tablet $sides-padding-tablet;
+    }
+
+    .portfolio{
+        padding: $up-padding-tablet $sides-padding-tablet;
     }
 }
 
@@ -73,13 +196,13 @@
 {
 
     header{
-        padding:0.5rem $sides-padding-mobile;
+        padding: $menu-padding $sides-padding-mobile;
     }
 
     main{
         height: auto;
         width: 100%;
-        padding: 0rem 6rem;
+        padding: $up-padding-mobile $sides-padding-mobile;
 
             h1{
                 font-size: $h1R;
@@ -96,20 +219,40 @@
             }
     }
 
-    .whyDesign{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-        grid-template-areas:
-        "whyDesignImage"
-        "whyDesignText"
-        ;
-        padding: 1rem 1rem;
-        align-items: center;
+    .indexCards{
+        padding: $up-padding-mobile $sides-padding-mobile;
 
-            p {
-                padding: 2rem 0rem;
-            }
+        .whyDesign{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 2fr;
+            grid-template-areas:
+            "whyDesignImage"
+            "whyDesignText"
+            ;
+            padding: 1rem 0rem;
+            align-items: center;
+    
+                p {
+                    padding: 2rem 0rem;
+                }
+        }
+
+        .thisis{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 2fr;
+            grid-template-areas:
+            "ThisisImage"
+            "thisisText"
+            ;
+            padding: 1rem 0rem;
+            align-items: center;
+    
+                p{
+                    padding: 2rem 0rem;
+                }
+        }
     }
 
     #whyDesignImage{
@@ -117,36 +260,19 @@
         justify-self: center;
         width: 90vw !important;
         height: auto !important;
-        padding: 0rem 0.5rem;
-
+        padding: 0.5rem 0rem;
     }
 
     #whyDesignText{
         grid-area: whyDesignText;
         justify-self: center;
-        padding: 1rem 0.5rem;
-    }
-
-    .thisis{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-        grid-template-areas:
-        "ThisisImage"
-        "thisisText"
-        ;
-        padding: 1rem 1rem;
-        align-items: center;
-
-            p{
-                padding: 2rem 0rem;
-            }
+        padding: 0.5rem 0rem;
     }
 
     #thisisText{
         grid-area: thisisText;
         justify-self: center;
-        padding: 1rem 0.5rem;
+        padding: 1rem 0rem;
     }
 
     #thisisImage{
@@ -156,15 +282,29 @@
         height: auto !important;
     }
 
+
     footer{
-        font-size: 0.4rem;
+        font-size: 0.5rem;
 
         #logotype{
-            padding-left: $sides-padding-mobile;
+            padding-left: 0rem;
         }
         
         #social{
             padding: 0rem $sides-padding-mobile;
+        }
+
+        ul{
+            height: 10rem;
+            text-align: center;
+            font-family:'Work Sans', sans-serif ;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "logo social"
+            ;
+            align-items: center;
         }
     }
 

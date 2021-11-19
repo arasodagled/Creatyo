@@ -13,14 +13,14 @@
 .blogArticles{
     display: grid;
     font-family:'Work Sans', sans-serif ;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     ". first second ."
     ". third fourth ."
     ;
     justify-items: start;
-    padding: 0rem 18rem;
+    padding: 0rem $sides-padding;
     grid-column-gap: 2rem;
     grid-row-gap: 6rem;
 }

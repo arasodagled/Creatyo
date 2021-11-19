@@ -8,13 +8,13 @@ $pmenu: 1.6rem;
 
 
 // h1
-$h1-spacing: 0.2rem;
+$h1-spacing: 0rem;
 $h1-line-height: 5rem;
 $h1-weight: 300;
 $h1-bold: 500;
 
 // Responsive
-$h1R: 4.2rem;
+$h1R: 3rem;
 $h1R-spacing: 1rem;
 $h1R-line-height: 4rem;
 $h1R-weight: 400;
@@ -73,8 +73,14 @@ $sides-padding: 14rem;
     // Index paddings
     $main-up-padding: 8rem;
 
+    //Tablet
+    $up-padding-tablet: 5rem;
+    $sides-padding-tablet: 4rem;
+    
+
     // Mobile
     $sides-padding-mobile: 2rem;
+    $up-padding-mobile: 2rem;
 
 
 

@@ -5,11 +5,11 @@
     h1{
         color: $dark-color;
         font-size: $h1;
-        font-weight: $h1-weight;
+        font-weight: $h1-bold;
         letter-spacing: $h1-spacing;
         line-height: $h1-line-height;
         text-align: left;
-        padding-bottom: $up-padding;
+        padding-bottom: $down-padding;
     }
 
     p{
@@ -31,6 +31,16 @@
         grid-template-areas: 
         "explora designit academia"
         ;
+
+        .explora{
+            border-style: solid;
+            text-decoration: none;
+
+
+            img{
+                border-radius: $bb-radius;
+            }
+        }
     }
 
     .explora{
