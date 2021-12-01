@@ -1,3 +1,6 @@
+@import "MediaQ";
+
+
 .portfolio{
 
     padding: $up-padding $sides-padding;
@@ -8,7 +11,7 @@
         font-weight: $h1-bold;
         letter-spacing: $h1-spacing;
         line-height: $h1-line-height;
-        text-align: left;
+        text-align: center;
         padding-bottom: $down-padding;
     }
 
@@ -24,36 +27,72 @@
         font-weight: $p-font-weight;
         letter-spacing: $p-spacing;
         line-height: $p-line-height;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px 70px;
+        justify-content: center;
 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "explora designit academia"
-        ;
+        .polaroid{
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            overflow: hidden;
+            width: 400px;
+            height: 425px;
+            border-radius: 20px;
+            
 
-        .explora{
-            border-style: solid;
-            text-decoration: none;
+            .figure{
+                .image-none{
+                    opacity: 0;
+                }
 
+                background-image: url(../Media/DesignitPortada.png);
 
-            img{
-                border-radius: $bb-radius;
+                &:hover{
+                    background-image: url(../Media/Designitgif.gif);
+                }
+            }
+
+            .figure-2{
+                .image-none{
+                    opacity: 0;
+                }
+
+                background-image: url(../Media/ExploraPortada.png);
+
+                &:hover{
+                    background-image: url(../Media/Exploragif.gif);
+                }
+            }
+
+            .figure-3{
+                .image-none{
+                    opacity: 0;
+                }
+
+                background-image: url(../Media/LocalPortada.png);
+
+                &:hover{
+                    background-image: url(../Media/Localgif.gif);
+                }
+            }
+
+            .container{
+                padding: 10px;
+            }
+
+            &:hover{
+                transform: scale(1.007, 1.007);
+                width: 400px;
+                height: 425px;
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+                transition: 0.4s ease;
+                // transform: translate(0.5);
             }
         }
     }
-
-    .explora{
-        grid-area: explora;
-
-    }
-
-    .designit{
-        grid-area: designit;
-    }
-
-    .academia{
-        grid-area: academia;
-    }
-
 }
+@import "footer";

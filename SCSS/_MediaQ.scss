@@ -10,67 +10,23 @@
         padding: $up-padding-tablet $sides-padding-tablet;
     }
 
-    .indexCards{
-        padding: $up-padding-tablet $sides-padding-tablet;
-    
-        .whyDesign{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr ;
-            grid-template-areas:
-            "whyDesignImage"
-            "whyDesignText"
-            ;
-            padding: 0rem 0rem;
-            align-items: center;
-        }
+.designWorks{
+    padding: $up-padding-tablet $sides-padding-tablet;
+    position: relative;
 
-        #whyDesignImage{
-            grid-area: whyDesignImage;
-            justify-self: center;
-        }
+    .right {
+        width: 100%;
+        color: $dark-color;
+        font-size: $p;
+        text-align: left;
+        padding-top: 2rem;
+        justify-self: center;
 
-        #whyDesignText{
-            grid-area: whyDesignText;
-            text-align: center;
-            justify-self: center;
-            padding: 1rem 0rem;
-
-            p {
-                padding: 2rem 0rem;
-            }
-        }
-
-        .thisis{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas:
-            "ThisisImage"
-            "thisisText"
-            ;
-            padding: 0rem 0rem;
-            align-items: center;
-        }
-
-        #thisisText{
-            grid-area: thisisText;
-            justify-self: center;
-            padding: 1rem 0rem;
-            text-align: center;
-            align-items: center;
-
-            p{
-                padding: 2rem 0rem;
-                text-align: center;
-            }
-        }
-
-        #thisisImage{
-            grid-area: ThisisImage;
-            justify-self: center;
+        img{
+            width: 100%;
         }
     }
+}
 
     footer{
 
@@ -106,65 +62,21 @@
         padding: $up-padding-tablet $sides-padding-tablet;
     }
 
-    .indexCards{
+    .designWorks{
         padding: $up-padding-tablet $sides-padding-tablet;
+        position: relative;
     
-        .whyDesign{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr ;
-            grid-template-areas:
-            "whyDesignImage"
-            "whyDesignText"
-            ;
-            padding: 0rem 0rem;
-            align-items: center;
-        }
-
-        #whyDesignImage{
-            grid-area: whyDesignImage;
+        .right {
+            width: 100%;
+            color: $dark-color;
+            font-size: $p;
+            text-align: left;
+            padding-top: 2rem;
             justify-self: center;
-        }
-
-        #whyDesignText{
-            grid-area: whyDesignText;
-            text-align: center;
-            justify-self: center;
-            padding: 1rem 0rem;
-
-            p {
-                padding: 2rem 0rem;
+    
+            img{
+                width: 100%;
             }
-        }
-
-        .thisis{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas:
-            "ThisisImage"
-            "thisisText"
-            ;
-            padding: 0rem 0rem;
-            align-items: center;
-        }
-
-        #thisisText{
-            grid-area: thisisText;
-            justify-self: center;
-            padding: 1rem 0rem;
-            text-align: center;
-            align-items: center;
-
-            p{
-                padding: 2rem 0rem;
-                text-align: center;
-            }
-        }
-
-        #thisisImage{
-            grid-area: ThisisImage;
-            justify-self: center;
         }
     }
 
@@ -202,84 +114,55 @@
     main{
         height: auto;
         width: 100%;
-        padding: $up-padding-mobile $sides-padding-mobile;
+        padding: 6rem $sides-padding-mobile;
 
             h1{
                 font-size: $h1R;
                 line-height: $h1R-line-height;
                 letter-spacing: $h1R-spacing;
-                // padding-left: 0.5rem;
             }
 
             h2{
-                // padding-left: 0.5rem;
                 font-size: $h2R;
                 line-height: $h2R-line-height;
                 letter-spacing: $h2R-spacing;
             }
     }
 
-    .indexCards{
-        padding: $up-padding-mobile $sides-padding-mobile;
-
-        .whyDesign{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 2fr;
-            grid-template-areas:
-            "whyDesignImage"
-            "whyDesignText"
-            ;
-            padding: 1rem 0rem;
-            align-items: center;
+    .designWorks{
+        padding: $down-padding;
+        padding-left: $sides-padding-mobile;
+        padding-right: 0rem;
+        position: relative;
     
-                p {
-                    padding: 2rem 0rem;
-                }
+        .right {
+            width: 100%;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            color: $dark-color;
+            font-size: $p;
+            text-align: left;
+            padding-top: 0rem;
+            justify-content: center;
+    
+            img{
+                width: 100%;
+                padding-top: 0rem;
+            }
         }
 
-        .thisis{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 2fr;
-            grid-template-areas:
-            "ThisisImage"
-            "thisisText"
-            ;
-            padding: 1rem 0rem;
-            align-items: center;
-    
-                p{
-                    padding: 2rem 0rem;
-                }
-        }
-    }
+        #sticky-div{
+            position: absolute;
+            width: 90%;
+            top: -4rem;
 
-    #whyDesignImage{
-        grid-area: whyDesignImage;
-        justify-self: center;
-        width: 90vw !important;
-        height: auto !important;
-        padding: 0.5rem 0rem;
-    }
+            }
 
-    #whyDesignText{
-        grid-area: whyDesignText;
-        justify-self: center;
-        padding: 0.5rem 0rem;
-    }
-
-    #thisisText{
-        grid-area: thisisText;
-        justify-self: center;
-        padding: 1rem 0rem;
-    }
-
-    #thisisImage{
-        grid-area: ThisisImage;
-        justify-self: center;
-        width: 90vw !important;
-        height: auto !important;
+        #sticky-div2{
+            position: relative;
+            width: 100%;
+            top: 0rem;
+            }
     }
 
 
@@ -288,10 +171,13 @@
 
         #logotype{
             padding-left: 0rem;
+            justify-self: center;
+
         }
         
         #social{
-            padding: 0rem $sides-padding-mobile;
+            padding: 0rem 0rem;
+            justify-self: center;
         }
 
         ul{
@@ -299,39 +185,53 @@
             text-align: center;
             font-family:'Work Sans', sans-serif ;
             display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
             grid-template-areas: 
-            "logo social"
+            "logo"
+            "social"
             ;
             align-items: center;
         }
     }
 
     .portfolio{
+        padding: $up-padding-mobile 0rem;
 
+        h1{
+            text-align: left;
+            padding: 0rem $sides-padding;
+        }
         .portfolioCards{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "explora"
-        "designit"
-        "academia"
-        ;
-        }
+            margin: 10px 0px;
 
-        .explora{
-            grid-area: explora;
-    
-        }
-    
-        .designit{
-            grid-area: designit;
-        }
-    
-        .academia{
-            grid-area: academia;
+            .polaroid{
+                width: 400px;
+                height: auto;
+            }
         }
     }
+
+    .blogArticles{
+
+        .Blog{
+            padding-left: $sides-padding-mobile;
+            grid-template-rows: 20rem 2rem 5rem 2rem;
+
+            .BlogImage{
+                width: 100%;
+            }
+        }
+
+    }
+
+    // .contactUs{
+    //     .contact-details{
+    //         .input{
+    //             width: 12rem;
+    //         }
+    //     }
+    // }
 }
+
+

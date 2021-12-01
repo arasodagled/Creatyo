@@ -1,0 +1,99 @@
+.contactUs{
+    padding: $up-padding $sides-padding;
+
+    p{
+        font-size: $p;
+        line-height: $p-line-height;
+        letter-spacing: $p-spacing;
+        font-weight: $p-bold;
+    }
+
+    h1{
+        color: $dark-color;
+        font-size: $h1;
+        letter-spacing: $h1-spacing;
+        line-height: $h1-line-height;
+        text-align: left;
+        font-weight: $h1-bold;
+        padding-bottom: $down-padding;
+        text-align: center;
+    }
+
+    .contactTable{
+        .contact-details{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+
+            .input{
+                margin-right: $sides-padding;
+                padding: 12px 20px;
+                width: 25rem;
+
+                input{
+                width: 130%;
+                margin: 2px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                height: 3rem;
+                font-size: $p;
+                }
+            }
+        }
+        
+        .message{
+            width: 82rem;
+            textarea{
+                width: 100%;
+                margin: 2px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                height: 10rem;
+                font-size: $p;
+                }
+        }
+
+        .type{
+            width: 82rem;
+            padding: $down-padding 0rem;
+
+                .radio-pick{
+                width: 100%;
+                font-size: $p;
+                margin: 2rem;
+                }
+        }
+
+        .interested{
+            width: 82rem;
+            padding: $down-padding 0rem;
+
+                .checkbox{
+                    width: 100%;
+                    font-size: $p;
+                    margin: 2rem;
+                }
+        }
+
+        .service{
+            width: 82rem;
+            select{
+            font-size: $p;
+            }
+        }
+
+        .buttons{
+            display:flex;
+            padding: $up-padding 0rem;
+            width: 82rem;
+            justify-content: flex-end;
+        }
+
+        
+    }
+
+}

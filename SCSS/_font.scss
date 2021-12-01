@@ -14,10 +14,10 @@ $h1-weight: 300;
 $h1-bold: 500;
 
 // Responsive
-$h1R: 3rem;
-$h1R-spacing: 1rem;
-$h1R-line-height: 4rem;
-$h1R-weight: 400;
+$h1R: 4.2rem;
+$h1R-spacing: 0rem;
+$h1R-line-height: 5rem;
+$h1R-weight: 300;
 $h1R-bold: 500;
 
 // h2
@@ -28,9 +28,9 @@ $h2-bold: 500;
 
 // Responsive
 $h2R: 3rem;
-$h2R-spacing: 0.7rem;
+$h2R-spacing: 0rem;
 $h2R-line-height: 4rem;
-$h2R-weight: 400;
+$h2R-weight: 300;
 $h2R-bold: 500;
 
 // h3
@@ -58,7 +58,7 @@ $p-font-weight-menu: 300;
 
 $up-padding: 4rem;
 $down-padding: 2rem;
-$sides-padding: 14rem;
+$sides-padding: 3.5rem;
 
     // Menu padding
     $menu-padding: 0.5rem;
@@ -71,7 +71,13 @@ $sides-padding: 14rem;
     $b-width: 14rem;
 
     // Index paddings
-    $main-up-padding: 8rem;
+    $main-up-padding: 12rem;
+
+    // Blog paddings
+    $bpadding-top: 0rem;
+    $bpadding-right: 2rem;
+    $bpadding-bottom: 4rem;
+    $bpadding-left: 0rem;
 
     //Tablet
     $up-padding-tablet: 5rem;

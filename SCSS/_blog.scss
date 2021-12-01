@@ -5,45 +5,24 @@
     font-weight: $h1-bold;
     letter-spacing: $h1-spacing;
     line-height: $h1-line-height;
-    text-align: left;
+    text-align: center;
 }
 
-/*----------------- Grids Blog --------------------*/
+/*----------------- flex Blog --------------------*/
 
 .blogArticles{
     display: grid;
     font-family:'Work Sans', sans-serif ;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    ". first second ."
-    ". third fourth ."
-    ;
-    justify-items: start;
-    padding: 0rem $sides-padding;
-    grid-column-gap: 2rem;
-    grid-row-gap: 6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:0rem $sides-padding;
+    margin: 0rem 6rem;
 }
-
-.firstBlog{
-    grid-area: first;
-}
-
-.secondBlog{
-    grid-area: second;
-}
-
-.thirdBlog{
-    grid-area: third;
-}
-
-.fourthBlog{
-    grid-area: fourth;
-}
-
 /*----------------- First article Grids Blog --------------------*/
 
-.firstBlog{
+.Blog{
     display:grid;
     font-family:'Work Sans', sans-serif ;
     grid-template-columns: 1fr;
@@ -55,176 +34,39 @@
     "button"
     ;
     justify-items: start;
-    padding: 0rem 10rem;
+    padding-top: $bpadding-top;
+    padding-right: $bpadding-right;
+    padding-bottom: $bpadding-bottom;
+    padding-left: $bpadding-left;
 }
 
-.firstBlogImage{
+.BlogImage{
     grid-area: image;
 }
 
-.firstBlogDate{
+.BlogDate{
     grid-area: date;
     font-size: $h5;
     color: $dark-color;
     font-weight: $h5-font-weight;
 }
 
-.firstBlogTitle{
+.BlogTitle{
     grid-area: title;
     font-size: $p;
     color: $dark-color;
 }
 
-.firstBlogButton{
+.BlogButton{
     grid-area: button;
     font-family:'Work Sans', sans-serif ;
     font-size: $p;
     color: $main-color;
     border: none;
     background-color: #ffffff;
+
+    &:hover{
+        font-weight: bold;
+    }
 }
 
-.firstBlogButton:hover{
-    font-weight: bold;
-}
-
-/*----------------- Second article Grids Blog --------------------*/ 
-
-.secondBlog{
-    display:grid;
-    font-family:'Work Sans', sans-serif ;
-    grid-template-columns: 1fr;
-    grid-template-rows: 23rem 2rem 5rem 2rem;
-    grid-template-areas: 
-    "image"
-    "date"
-    "title"
-    "button"
-    ;
-    justify-items: start;
-    padding: 0rem 10rem;
-}
-
-.secondBlogImage{
-    grid-area: image;
-}
-
-.secondBlogDate{
-    grid-area: date;
-    font-size: $h5;
-    color: $dark-color;
-    font-weight: $h5-font-weight;
-}
-
-.secondBlogTitle{
-    grid-area: title;
-    font-size: 1.8rem;
-    color: $dark-color;
-}
-
-.secondBlogButton{
-    grid-area: button;
-    font-family:'Work Sans', sans-serif ;
-    font-size: $p;
-    color: $main-color;
-    border: none;
-    background-color: #ffffff;
-}
-
-.secondBlogButton:hover{
-    font-weight: bold;
-}
-
-/*----------------- Third article Grids Blog --------------------*/ 
-
-.thirdBlog{
-    display:grid;
-    font-family:'Work Sans', sans-serif ;
-    grid-template-columns: 1fr;
-    grid-template-rows: 23rem 2rem 5rem 2rem;
-    grid-template-areas: 
-    "image"
-    "date"
-    "title"
-    "button"
-    ;
-    justify-items: start;
-    padding: 0rem 10rem;
-}
-
-.thirdBlogImage{
-    grid-area: image;
-}
-
-.thirdBlogDate{
-    grid-area: date;
-    font-size: $h5;
-    color: $dark-color;
-    font-weight: $h5-font-weight;
-}
-
-.thirdBlogTitle{
-    grid-area: title;
-    font-size: 1.8rem;
-    color: $dark-color;
-}
-
-.thirdBlogButton{
-    grid-area: button;
-    font-family:'Work Sans', sans-serif ;
-    font-size: $p;
-    color: $main-color;
-    border: none;
-    background-color: #ffffff;
-}
-
-.thirdBlogButton:hover{
-    font-weight: bold;
-}
-
-/*----------------- fourth article Grids Blog --------------------*/ 
-
-.fourthBlog{
-    display:grid;
-    font-family:'Work Sans', sans-serif ;
-    grid-template-columns: 1fr;
-    grid-template-rows: 23rem 2rem 5rem 2rem;
-    grid-template-areas: 
-    "image"
-    "date"
-    "title"
-    "button"
-    ;
-    justify-items: start;
-    padding: 0rem 10rem;
-}
-
-.fourthBlogImage{
-    grid-area: image;
-}
-
-.fourthBlogDate{
-    grid-area: date;
-    font-size: $h5;
-    color: $dark-color;
-    font-weight: $h5-font-weight;
-}
-
-.fourthBlogTitle{
-    grid-area: title;
-    font-size: 1.8rem;
-    color: $dark-color;
-}
-
-.fourthBlogButton{
-    grid-area: button;
-    font-family:'Work Sans', sans-serif ;
-    font-size: $p;
-    color: $main-color;
-    border: none;
-    background-color: #ffffff;
-}
-
-.fourthBlogButton:hover{
-    font-weight: bold;
-}

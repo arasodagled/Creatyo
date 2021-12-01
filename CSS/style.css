@@ -30,7 +30,7 @@ body {
     font-weight: 300;
     transition: all 0.3 ease 0; }
 
-.designButton {
+.contactButton {
   background-color: #E5E5E5;
   border: none;
   font-weight: 300;
@@ -43,7 +43,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   border-radius: 3rem;
   width: 14rem; }
-  .designButton:hover {
+  .contactButton:hover {
     color: #333333;
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     font-weight: 300;
@@ -90,7 +90,7 @@ main {
   background-color: #ffffff;
   height: auto;
   width: 100%;
-  padding: 8rem 14rem; }
+  padding: 12rem 3.5rem; }
   main h1 {
     color: #333333;
     font-size: 4.2rem;
@@ -113,82 +113,47 @@ main {
     main h2 .titleHighlight {
       font-weight: 500; }
 
-.indexCards {
-  padding: 4rem 14rem; }
-
-.whyDesign #whyDesignImage {
-  width: 60rem;
-  height: 30rem; }
-
-.whyDesign #whyDesignText h3 {
-  color: #333333;
-  font-size: 2.6rem;
-  line-height: 3rem; }
-
-.whyDesign #whyDesignText p {
-  font-size: 1.8rem;
-  color: #333333;
-  line-height: 2.5rem;
-  letter-spacing: 0rem;
-  font-weight: 400; }
-
-.thisis #thisisImage {
-  width: 60rem;
-  height: 30rem; }
-
-.thisis #thisisText h3 {
-  color: #333333;
-  font-size: 2.6rem;
-  line-height: 3rem; }
-
-.thisis #thisisText p {
-  font-size: 1.8rem;
-  color: #333333;
-  line-height: 2.5rem;
-  letter-spacing: 0rem;
-  font-weight: 400; }
-
-/* ------------------- Grids index ------------------*/
-.whyDesign {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "whyDesignImage whyDesignText";
-  padding: 0rem 0rem;
-  align-items: center; }
-
-#whyDesignImage {
-  grid-area: whyDesignImage;
-  justify-self: start; }
-
-#whyDesignText {
-  grid-area: whyDesignText;
-  justify-self: start;
-  padding-left: 2rem; }
-  #whyDesignText p {
-    padding: 2rem 0rem; }
-
-.thisis {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "thisisText ThisisImage";
+.designWorks {
   padding-top: 4rem;
-  align-items: center; }
+  padding-bottom: 4rem;
+  padding-left: 3.5rem;
+  padding-right: 0rem;
+  position: relative; }
 
-#thisisText {
-  grid-area: thisisText;
+.right {
+  padding-left: 30%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 2rem; }
-  #thisisText p {
-    padding: 2rem 0rem;
-    text-align: right; }
+  color: #333333;
+  font-size: 1.8rem;
+  text-align: left;
+  padding-top: 0rem;
+  justify-content: end; }
 
-#thisisImage {
-  grid-area: ThisisImage;
-  justify-self: end; }
+#sticky-div {
+  position: sticky;
+  width: 30%;
+  top: 10rem;
+  color: #333333;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0rem;
+  line-height: 6rem;
+  text-align: left;
+  text-decoration: underline; }
+
+#sticky-div2 {
+  position: sticky;
+  width: 27%;
+  top: 10rem;
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0rem;
+  line-height: 6rem;
+  text-align: left;
+  text-decoration: underline;
+  z-index: 9; }
 
 @media only screen and (max-width: 1024px) {
   header {
@@ -197,44 +162,18 @@ main {
     height: auto;
     width: 100%;
     padding: 5rem 4rem; }
-  .indexCards {
-    padding: 5rem 4rem; }
-    .indexCards .whyDesign {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "whyDesignImage" "whyDesignText";
-      padding: 0rem 0rem;
-      align-items: center; }
-    .indexCards #whyDesignImage {
-      grid-area: whyDesignImage;
+  .designWorks {
+    padding: 5rem 4rem;
+    position: relative; }
+    .designWorks .right {
+      width: 100%;
+      color: #333333;
+      font-size: 1.8rem;
+      text-align: left;
+      padding-top: 2rem;
       justify-self: center; }
-    .indexCards #whyDesignText {
-      grid-area: whyDesignText;
-      text-align: center;
-      justify-self: center;
-      padding: 1rem 0rem; }
-      .indexCards #whyDesignText p {
-        padding: 2rem 0rem; }
-    .indexCards .thisis {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "ThisisImage" "thisisText";
-      padding: 0rem 0rem;
-      align-items: center; }
-    .indexCards #thisisText {
-      grid-area: thisisText;
-      justify-self: center;
-      padding: 1rem 0rem;
-      text-align: center;
-      align-items: center; }
-      .indexCards #thisisText p {
-        padding: 2rem 0rem;
-        text-align: center; }
-    .indexCards #thisisImage {
-      grid-area: ThisisImage;
-      justify-self: center; }
+      .designWorks .right img {
+        width: 100%; }
   footer #logotype {
     padding-left: 4rem; }
   footer #social {
@@ -251,44 +190,18 @@ main {
     height: auto;
     width: 100%;
     padding: 5rem 4rem; }
-  .indexCards {
-    padding: 5rem 4rem; }
-    .indexCards .whyDesign {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "whyDesignImage" "whyDesignText";
-      padding: 0rem 0rem;
-      align-items: center; }
-    .indexCards #whyDesignImage {
-      grid-area: whyDesignImage;
+  .designWorks {
+    padding: 5rem 4rem;
+    position: relative; }
+    .designWorks .right {
+      width: 100%;
+      color: #333333;
+      font-size: 1.8rem;
+      text-align: left;
+      padding-top: 2rem;
       justify-self: center; }
-    .indexCards #whyDesignText {
-      grid-area: whyDesignText;
-      text-align: center;
-      justify-self: center;
-      padding: 1rem 0rem; }
-      .indexCards #whyDesignText p {
-        padding: 2rem 0rem; }
-    .indexCards .thisis {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "ThisisImage" "thisisText";
-      padding: 0rem 0rem;
-      align-items: center; }
-    .indexCards #thisisText {
-      grid-area: thisisText;
-      justify-self: center;
-      padding: 1rem 0rem;
-      text-align: center;
-      align-items: center; }
-      .indexCards #thisisText p {
-        padding: 2rem 0rem;
-        text-align: center; }
-    .indexCards #thisisImage {
-      grid-area: ThisisImage;
-      justify-self: center; }
+      .designWorks .right img {
+        width: 100%; }
   footer #logotype {
     padding-left: 4rem; }
   footer #social {
@@ -304,83 +217,75 @@ main {
   main {
     height: auto;
     width: 100%;
-    padding: 2rem 2rem; }
+    padding: 6rem 2rem; }
     main h1 {
-      font-size: 3rem;
-      line-height: 4rem;
-      letter-spacing: 1rem; }
+      font-size: 4.2rem;
+      line-height: 5rem;
+      letter-spacing: 0rem; }
     main h2 {
       font-size: 3rem;
       line-height: 4rem;
-      letter-spacing: 0.7rem; }
-  .indexCards {
-    padding: 2rem 2rem; }
-    .indexCards .whyDesign {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 2fr;
-      grid-template-areas: "whyDesignImage" "whyDesignText";
-      padding: 1rem 0rem;
-      align-items: center; }
-      .indexCards .whyDesign p {
-        padding: 2rem 0rem; }
-    .indexCards .thisis {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 2fr;
-      grid-template-areas: "ThisisImage" "thisisText";
-      padding: 1rem 0rem;
-      align-items: center; }
-      .indexCards .thisis p {
-        padding: 2rem 0rem; }
-  #whyDesignImage {
-    grid-area: whyDesignImage;
-    justify-self: center;
-    width: 90vw !important;
-    height: auto !important;
-    padding: 0.5rem 0rem; }
-  #whyDesignText {
-    grid-area: whyDesignText;
-    justify-self: center;
-    padding: 0.5rem 0rem; }
-  #thisisText {
-    grid-area: thisisText;
-    justify-self: center;
-    padding: 1rem 0rem; }
-  #thisisImage {
-    grid-area: ThisisImage;
-    justify-self: center;
-    width: 90vw !important;
-    height: auto !important; }
+      letter-spacing: 0rem; }
+  .designWorks {
+    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 0rem;
+    position: relative; }
+    .designWorks .right {
+      width: 100%;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      color: #333333;
+      font-size: 1.8rem;
+      text-align: left;
+      padding-top: 0rem;
+      justify-content: center; }
+      .designWorks .right img {
+        width: 100%;
+        padding-top: 0rem; }
+    .designWorks #sticky-div {
+      position: absolute;
+      width: 90%;
+      top: -4rem; }
+    .designWorks #sticky-div2 {
+      position: relative;
+      width: 100%;
+      top: 0rem; }
   footer {
     font-size: 0.5rem; }
     footer #logotype {
-      padding-left: 0rem; }
+      padding-left: 0rem;
+      justify-self: center; }
     footer #social {
-      padding: 0rem 2rem; }
+      padding: 0rem 0rem;
+      justify-self: center; }
     footer ul {
       height: 10rem;
       text-align: center;
       font-family: 'Work Sans', sans-serif;
       display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "logo social";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "logo" "social";
       align-items: center; }
-  .portfolio .portfolioCards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "explora" "designit" "academia"; }
-  .portfolio .explora {
-    grid-area: explora; }
-  .portfolio .designit {
-    grid-area: designit; }
-  .portfolio .academia {
-    grid-area: academia; } }
+  .portfolio {
+    padding: 2rem 0rem; }
+    .portfolio h1 {
+      text-align: left;
+      padding: 0rem 3.5rem; }
+    .portfolio .portfolioCards {
+      margin: 10px 0px; }
+      .portfolio .portfolioCards .polaroid {
+        width: 400px;
+        height: auto; }
+  .blogArticles .Blog {
+    padding-left: 2rem;
+    grid-template-rows: 20rem 2rem 5rem 2rem; }
+    .blogArticles .Blog .BlogImage {
+      width: 100%; } }
 
 .services {
-  padding: 4rem 14rem; }
+  padding: 4rem 3.5rem; }
   .services h1 {
     color: #333333;
     font-size: 4.2rem;
@@ -388,7 +293,8 @@ main {
     line-height: 5rem;
     text-align: left;
     font-weight: 500;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    text-align: center; }
   .services p {
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -399,7 +305,8 @@ main {
   .serviceTable th {
     font-size: 1.8rem;
     line-height: 2.5rem;
-    padding: 0.7rem 0rem; }
+    padding: 0.7rem 0rem;
+    font-weight: 800; }
   .serviceTable td {
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -408,187 +315,200 @@ main {
     padding-right: 20rem; }
 
 .blog {
-  padding: 4rem 14rem;
+  padding: 4rem 3.5rem;
   color: #333333;
   font-size: 4.2rem;
   font-weight: 500;
   letter-spacing: 0rem;
   line-height: 5rem;
-  text-align: left; }
+  text-align: center; }
 
-/*----------------- Grids Blog --------------------*/
+/*----------------- flex Blog --------------------*/
 .blogArticles {
   display: grid;
   font-family: 'Work Sans', sans-serif;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: ". first second ." ". third fourth .";
-  justify-items: start;
-  padding: 0rem 14rem;
-  grid-column-gap: 2rem;
-  grid-row-gap: 6rem; }
-
-.firstBlog {
-  grid-area: first; }
-
-.secondBlog {
-  grid-area: second; }
-
-.thirdBlog {
-  grid-area: third; }
-
-.fourthBlog {
-  grid-area: fourth; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0rem 3.5rem;
+  margin: 0rem 6rem; }
 
 /*----------------- First article Grids Blog --------------------*/
-.firstBlog {
+.Blog {
   display: grid;
   font-family: 'Work Sans', sans-serif;
   grid-template-columns: 1fr;
   grid-template-rows: 23rem 2rem 5rem 2rem;
   grid-template-areas: "image" "date" "title" "button";
   justify-items: start;
-  padding: 0rem 10rem; }
+  padding-top: 0rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 0rem; }
 
-.firstBlogImage {
+.BlogImage {
   grid-area: image; }
 
-.firstBlogDate {
+.BlogDate {
   grid-area: date;
   font-size: 1.4rem;
   color: #333333;
   font-weight: normal; }
 
-.firstBlogTitle {
+.BlogTitle {
   grid-area: title;
   font-size: 1.8rem;
   color: #333333; }
 
-.firstBlogButton {
+.BlogButton {
   grid-area: button;
   font-family: 'Work Sans', sans-serif;
   font-size: 1.8rem;
   color: #5D5FEF;
   border: none;
   background-color: #ffffff; }
+  .BlogButton:hover {
+    font-weight: bold; }
 
-.firstBlogButton:hover {
-  font-weight: bold; }
+@media only screen and (max-width: 1024px) {
+  header {
+    padding: 0.5rem 4rem; }
+  main {
+    height: auto;
+    width: 100%;
+    padding: 5rem 4rem; }
+  .designWorks {
+    padding: 5rem 4rem;
+    position: relative; }
+    .designWorks .right {
+      width: 100%;
+      color: #333333;
+      font-size: 1.8rem;
+      text-align: left;
+      padding-top: 2rem;
+      justify-self: center; }
+      .designWorks .right img {
+        width: 100%; }
+  footer #logotype {
+    padding-left: 4rem; }
+  footer #social {
+    padding: 0rem 4rem; }
+  .services {
+    padding: 2rem 2rem; }
+  .portfolio {
+    padding: 2rem 2rem; } }
 
-/*----------------- Second article Grids Blog --------------------*/
-.secondBlog {
-  display: grid;
-  font-family: 'Work Sans', sans-serif;
-  grid-template-columns: 1fr;
-  grid-template-rows: 23rem 2rem 5rem 2rem;
-  grid-template-areas: "image" "date" "title" "button";
-  justify-items: start;
-  padding: 0rem 10rem; }
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 0.5rem 4rem; }
+  main {
+    height: auto;
+    width: 100%;
+    padding: 5rem 4rem; }
+  .designWorks {
+    padding: 5rem 4rem;
+    position: relative; }
+    .designWorks .right {
+      width: 100%;
+      color: #333333;
+      font-size: 1.8rem;
+      text-align: left;
+      padding-top: 2rem;
+      justify-self: center; }
+      .designWorks .right img {
+        width: 100%; }
+  footer #logotype {
+    padding-left: 4rem; }
+  footer #social {
+    padding: 0rem 4rem; }
+  .services {
+    padding: 5rem 4rem; }
+  .portfolio {
+    padding: 5rem 4rem; } }
 
-.secondBlogImage {
-  grid-area: image; }
-
-.secondBlogDate {
-  grid-area: date;
-  font-size: 1.4rem;
-  color: #333333;
-  font-weight: normal; }
-
-.secondBlogTitle {
-  grid-area: title;
-  font-size: 1.8rem;
-  color: #333333; }
-
-.secondBlogButton {
-  grid-area: button;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.8rem;
-  color: #5D5FEF;
-  border: none;
-  background-color: #ffffff; }
-
-.secondBlogButton:hover {
-  font-weight: bold; }
-
-/*----------------- Third article Grids Blog --------------------*/
-.thirdBlog {
-  display: grid;
-  font-family: 'Work Sans', sans-serif;
-  grid-template-columns: 1fr;
-  grid-template-rows: 23rem 2rem 5rem 2rem;
-  grid-template-areas: "image" "date" "title" "button";
-  justify-items: start;
-  padding: 0rem 10rem; }
-
-.thirdBlogImage {
-  grid-area: image; }
-
-.thirdBlogDate {
-  grid-area: date;
-  font-size: 1.4rem;
-  color: #333333;
-  font-weight: normal; }
-
-.thirdBlogTitle {
-  grid-area: title;
-  font-size: 1.8rem;
-  color: #333333; }
-
-.thirdBlogButton {
-  grid-area: button;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.8rem;
-  color: #5D5FEF;
-  border: none;
-  background-color: #ffffff; }
-
-.thirdBlogButton:hover {
-  font-weight: bold; }
-
-/*----------------- fourth article Grids Blog --------------------*/
-.fourthBlog {
-  display: grid;
-  font-family: 'Work Sans', sans-serif;
-  grid-template-columns: 1fr;
-  grid-template-rows: 23rem 2rem 5rem 2rem;
-  grid-template-areas: "image" "date" "title" "button";
-  justify-items: start;
-  padding: 0rem 10rem; }
-
-.fourthBlogImage {
-  grid-area: image; }
-
-.fourthBlogDate {
-  grid-area: date;
-  font-size: 1.4rem;
-  color: #333333;
-  font-weight: normal; }
-
-.fourthBlogTitle {
-  grid-area: title;
-  font-size: 1.8rem;
-  color: #333333; }
-
-.fourthBlogButton {
-  grid-area: button;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.8rem;
-  color: #5D5FEF;
-  border: none;
-  background-color: #ffffff; }
-
-.fourthBlogButton:hover {
-  font-weight: bold; }
+@media only screen and (max-width: 426px) {
+  header {
+    padding: 0.5rem 2rem; }
+  main {
+    height: auto;
+    width: 100%;
+    padding: 6rem 2rem; }
+    main h1 {
+      font-size: 4.2rem;
+      line-height: 5rem;
+      letter-spacing: 0rem; }
+    main h2 {
+      font-size: 3rem;
+      line-height: 4rem;
+      letter-spacing: 0rem; }
+  .designWorks {
+    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 0rem;
+    position: relative; }
+    .designWorks .right {
+      width: 100%;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      color: #333333;
+      font-size: 1.8rem;
+      text-align: left;
+      padding-top: 0rem;
+      justify-content: center; }
+      .designWorks .right img {
+        width: 100%;
+        padding-top: 0rem; }
+    .designWorks #sticky-div {
+      position: absolute;
+      width: 90%;
+      top: -4rem; }
+    .designWorks #sticky-div2 {
+      position: relative;
+      width: 100%;
+      top: 0rem; }
+  footer {
+    font-size: 0.5rem; }
+    footer #logotype {
+      padding-left: 0rem;
+      justify-self: center; }
+    footer #social {
+      padding: 0rem 0rem;
+      justify-self: center; }
+    footer ul {
+      height: 10rem;
+      text-align: center;
+      font-family: 'Work Sans', sans-serif;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "logo" "social";
+      align-items: center; }
+  .portfolio {
+    padding: 2rem 0rem; }
+    .portfolio h1 {
+      text-align: left;
+      padding: 0rem 3.5rem; }
+    .portfolio .portfolioCards {
+      margin: 10px 0px; }
+      .portfolio .portfolioCards .polaroid {
+        width: 400px;
+        height: auto; }
+  .blogArticles .Blog {
+    padding-left: 2rem;
+    grid-template-rows: 20rem 2rem 5rem 2rem; }
+    .blogArticles .Blog .BlogImage {
+      width: 100%; } }
 
 .portfolio {
-  padding: 4rem 14rem; }
+  padding: 4rem 3.5rem; }
   .portfolio h1 {
     color: #333333;
     font-size: 4.2rem;
     font-weight: 500;
     letter-spacing: 0rem;
     line-height: 5rem;
-    text-align: left;
+    text-align: center;
     padding-bottom: 2rem; }
   .portfolio p {
     font-size: 1.8rem;
@@ -600,25 +520,95 @@ main {
     font-weight: 400;
     letter-spacing: 0rem;
     line-height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 70px;
+    justify-content: center; }
+    .portfolio .portfolioCards .polaroid {
+      margin: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+      overflow: hidden;
+      width: 400px;
+      height: 425px;
+      border-radius: 20px; }
+      .portfolio .portfolioCards .polaroid .figure {
+        background-image: url(../Media/DesignitPortada.png); }
+        .portfolio .portfolioCards .polaroid .figure .image-none {
+          opacity: 0; }
+        .portfolio .portfolioCards .polaroid .figure:hover {
+          background-image: url(../Media/Designitgif.gif); }
+      .portfolio .portfolioCards .polaroid .figure-2 {
+        background-image: url(../Media/ExploraPortada.png); }
+        .portfolio .portfolioCards .polaroid .figure-2 .image-none {
+          opacity: 0; }
+        .portfolio .portfolioCards .polaroid .figure-2:hover {
+          background-image: url(../Media/Exploragif.gif); }
+      .portfolio .portfolioCards .polaroid .figure-3 {
+        background-image: url(../Media/LocalPortada.png); }
+        .portfolio .portfolioCards .polaroid .figure-3 .image-none {
+          opacity: 0; }
+        .portfolio .portfolioCards .polaroid .figure-3:hover {
+          background-image: url(../Media/Localgif.gif); }
+      .portfolio .portfolioCards .polaroid .container {
+        padding: 10px; }
+      .portfolio .portfolioCards .polaroid:hover {
+        transform: scale(1.007, 1.007);
+        width: 400px;
+        height: 425px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        transition: 0.4s ease; }
+
+footer {
+  background-color: #333333; }
+  footer ul {
+    height: 10rem;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "explora designit academia"; }
-    .portfolio .portfolioCards .explora {
-      border-style: solid;
-      text-decoration: none; }
-      .portfolio .portfolioCards .explora img {
-        border-radius: 3rem; }
-  .portfolio .explora {
-    grid-area: explora; }
-  .portfolio .designit {
-    grid-area: designit; }
-  .portfolio .academia {
-    grid-area: academia; }
+    grid-template-areas: "logo social";
+    align-items: center; }
+    footer ul hr {
+      background-color: aquamarine; }
+    footer ul li {
+      list-style: none;
+      display: inline; }
+      footer ul li a {
+        color: #E5E5E5;
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-decoration: none; }
+        footer ul li a:hover {
+          color: #66FFCC; }
+
+#logotype {
+  grid-area: logo;
+  justify-self: start;
+  padding-left: 3.5rem; }
+  #logotype li {
+    color: #E5E5E5;
+    font-size: 1.6rem;
+    font-weight: 300; }
+
+#social {
+  grid-area: social;
+  justify-self: end;
+  padding: 0rem 3.5rem;
+  color: #E5E5E5; }
+  #social #mail {
+    padding-left: 1.5rem; }
+  #social #face {
+    padding-left: 1.5rem; }
+  #social:hover {
+    color: #66FFCC; }
 
 header {
   background-color: #333333;
-  padding: 0.5rem 14rem;
+  padding: 0.5rem 3.5rem;
   font-family: 'Work Sans', sans-serif;
   display: flex;
   flex-direction: row;
@@ -679,7 +669,7 @@ footer {
 #logotype {
   grid-area: logo;
   justify-self: start;
-  padding-left: 14rem; }
+  padding-left: 3.5rem; }
   #logotype li {
     color: #E5E5E5;
     font-size: 1.6rem;
@@ -688,7 +678,7 @@ footer {
 #social {
   grid-area: social;
   justify-self: end;
-  padding: 0rem 14rem;
+  padding: 0rem 3.5rem;
   color: #E5E5E5; }
   #social #mail {
     padding-left: 1.5rem; }
@@ -704,44 +694,18 @@ footer {
     height: auto;
     width: 100%;
     padding: 5rem 4rem; }
-  .indexCards {
-    padding: 5rem 4rem; }
-    .indexCards .whyDesign {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "whyDesignImage" "whyDesignText";
-      padding: 0rem 0rem;
-      align-items: center; }
-    .indexCards #whyDesignImage {
-      grid-area: whyDesignImage;
+  .designWorks {
+    padding: 5rem 4rem;
+    position: relative; }
+    .designWorks .right {
+      width: 100%;
+      color: #333333;
+      font-size: 1.8rem;
+      text-align: left;
+      padding-top: 2rem;
       justify-self: center; }
-    .indexCards #whyDesignText {
-      grid-area: whyDesignText;
-      text-align: center;
-      justify-self: center;
-      padding: 1rem 0rem; }
-      .indexCards #whyDesignText p {
-        padding: 2rem 0rem; }
-    .indexCards .thisis {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "ThisisImage" "thisisText";
-      padding: 0rem 0rem;
-      align-items: center; }
-    .indexCards #thisisText {
-      grid-area: thisisText;
-      justify-self: center;
-      padding: 1rem 0rem;
-      text-align: center;
-      align-items: center; }
-      .indexCards #thisisText p {
-        padding: 2rem 0rem;
-        text-align: center; }
-    .indexCards #thisisImage {
-      grid-area: ThisisImage;
-      justify-self: center; }
+      .designWorks .right img {
+        width: 100%; }
   footer #logotype {
     padding-left: 4rem; }
   footer #social {
@@ -758,44 +722,18 @@ footer {
     height: auto;
     width: 100%;
     padding: 5rem 4rem; }
-  .indexCards {
-    padding: 5rem 4rem; }
-    .indexCards .whyDesign {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "whyDesignImage" "whyDesignText";
-      padding: 0rem 0rem;
-      align-items: center; }
-    .indexCards #whyDesignImage {
-      grid-area: whyDesignImage;
+  .designWorks {
+    padding: 5rem 4rem;
+    position: relative; }
+    .designWorks .right {
+      width: 100%;
+      color: #333333;
+      font-size: 1.8rem;
+      text-align: left;
+      padding-top: 2rem;
       justify-self: center; }
-    .indexCards #whyDesignText {
-      grid-area: whyDesignText;
-      text-align: center;
-      justify-self: center;
-      padding: 1rem 0rem; }
-      .indexCards #whyDesignText p {
-        padding: 2rem 0rem; }
-    .indexCards .thisis {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "ThisisImage" "thisisText";
-      padding: 0rem 0rem;
-      align-items: center; }
-    .indexCards #thisisText {
-      grid-area: thisisText;
-      justify-self: center;
-      padding: 1rem 0rem;
-      text-align: center;
-      align-items: center; }
-      .indexCards #thisisText p {
-        padding: 2rem 0rem;
-        text-align: center; }
-    .indexCards #thisisImage {
-      grid-area: ThisisImage;
-      justify-self: center; }
+      .designWorks .right img {
+        width: 100%; }
   footer #logotype {
     padding-left: 4rem; }
   footer #social {
@@ -811,80 +749,139 @@ footer {
   main {
     height: auto;
     width: 100%;
-    padding: 2rem 2rem; }
+    padding: 6rem 2rem; }
     main h1 {
-      font-size: 3rem;
-      line-height: 4rem;
-      letter-spacing: 1rem; }
+      font-size: 4.2rem;
+      line-height: 5rem;
+      letter-spacing: 0rem; }
     main h2 {
       font-size: 3rem;
       line-height: 4rem;
-      letter-spacing: 0.7rem; }
-  .indexCards {
-    padding: 2rem 2rem; }
-    .indexCards .whyDesign {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 2fr;
-      grid-template-areas: "whyDesignImage" "whyDesignText";
-      padding: 1rem 0rem;
-      align-items: center; }
-      .indexCards .whyDesign p {
-        padding: 2rem 0rem; }
-    .indexCards .thisis {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 2fr;
-      grid-template-areas: "ThisisImage" "thisisText";
-      padding: 1rem 0rem;
-      align-items: center; }
-      .indexCards .thisis p {
-        padding: 2rem 0rem; }
-  #whyDesignImage {
-    grid-area: whyDesignImage;
-    justify-self: center;
-    width: 90vw !important;
-    height: auto !important;
-    padding: 0.5rem 0rem; }
-  #whyDesignText {
-    grid-area: whyDesignText;
-    justify-self: center;
-    padding: 0.5rem 0rem; }
-  #thisisText {
-    grid-area: thisisText;
-    justify-self: center;
-    padding: 1rem 0rem; }
-  #thisisImage {
-    grid-area: ThisisImage;
-    justify-self: center;
-    width: 90vw !important;
-    height: auto !important; }
+      letter-spacing: 0rem; }
+  .designWorks {
+    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 0rem;
+    position: relative; }
+    .designWorks .right {
+      width: 100%;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      color: #333333;
+      font-size: 1.8rem;
+      text-align: left;
+      padding-top: 0rem;
+      justify-content: center; }
+      .designWorks .right img {
+        width: 100%;
+        padding-top: 0rem; }
+    .designWorks #sticky-div {
+      position: absolute;
+      width: 90%;
+      top: -4rem; }
+    .designWorks #sticky-div2 {
+      position: relative;
+      width: 100%;
+      top: 0rem; }
   footer {
     font-size: 0.5rem; }
     footer #logotype {
-      padding-left: 0rem; }
+      padding-left: 0rem;
+      justify-self: center; }
     footer #social {
-      padding: 0rem 2rem; }
+      padding: 0rem 0rem;
+      justify-self: center; }
     footer ul {
       height: 10rem;
       text-align: center;
       font-family: 'Work Sans', sans-serif;
       display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "logo social";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "logo" "social";
       align-items: center; }
-  .portfolio .portfolioCards {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "explora" "designit" "academia"; }
-  .portfolio .explora {
-    grid-area: explora; }
-  .portfolio .designit {
-    grid-area: designit; }
-  .portfolio .academia {
-    grid-area: academia; } }
+  .portfolio {
+    padding: 2rem 0rem; }
+    .portfolio h1 {
+      text-align: left;
+      padding: 0rem 3.5rem; }
+    .portfolio .portfolioCards {
+      margin: 10px 0px; }
+      .portfolio .portfolioCards .polaroid {
+        width: 400px;
+        height: auto; }
+  .blogArticles .Blog {
+    padding-left: 2rem;
+    grid-template-rows: 20rem 2rem 5rem 2rem; }
+    .blogArticles .Blog .BlogImage {
+      width: 100%; } }
+
+.contactUs {
+  padding: 4rem 3.5rem; }
+  .contactUs p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0rem;
+    font-weight: 500; }
+  .contactUs h1 {
+    color: #333333;
+    font-size: 4.2rem;
+    letter-spacing: 0rem;
+    line-height: 5rem;
+    text-align: left;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    text-align: center; }
+  .contactUs .contactTable .contact-details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+    .contactUs .contactTable .contact-details .input {
+      margin-right: 3.5rem;
+      padding: 12px 20px;
+      width: 25rem; }
+      .contactUs .contactTable .contact-details .input input {
+        width: 130%;
+        margin: 2px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        height: 3rem;
+        font-size: 1.8rem; }
+  .contactUs .contactTable .message {
+    width: 82rem; }
+    .contactUs .contactTable .message textarea {
+      width: 100%;
+      margin: 2px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      height: 10rem;
+      font-size: 1.8rem; }
+  .contactUs .contactTable .type {
+    width: 82rem;
+    padding: 2rem 0rem; }
+    .contactUs .contactTable .type .radio-pick {
+      width: 100%;
+      font-size: 1.8rem;
+      margin: 2rem; }
+  .contactUs .contactTable .interested {
+    width: 82rem;
+    padding: 2rem 0rem; }
+    .contactUs .contactTable .interested .checkbox {
+      width: 100%;
+      font-size: 1.8rem;
+      margin: 2rem; }
+  .contactUs .contactTable .service {
+    width: 82rem; }
+    .contactUs .contactTable .service select {
+      font-size: 1.8rem; }
+  .contactUs .contactTable .buttons {
+    display: flex;
+    padding: 4rem 0rem;
+    width: 82rem;
+    justify-content: flex-end; }
 
 .error {
   width: 100vw; }

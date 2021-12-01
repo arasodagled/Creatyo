@@ -65,110 +65,72 @@ main{
     }
 }
 
-.indexCards{
-    padding: $up-padding $sides-padding;
-}
-
-
-.whyDesign{
-    #whyDesignImage{
-        width: 60rem;
-        height: 30rem;
-    }
-
-    #whyDesignText{
-        h3{
-            color: $dark-color;
-            font-size: $h3;
-            line-height: $h3-line-height;
-        }
-
-        p{
-            font-size: $p;
-            color: $dark-color;
-            line-height: $p-line-height;
-            letter-spacing: $p-spacing;
-            font-weight: $p-font-weight;
-        }
-    }
-}
-
-.thisis{
-    #thisisImage{
-        width: 60rem;
-        height: 30rem;
-    }
-
-    #thisisText{
-        h3{
-            color: $dark-color;
-            font-size: $h3;
-            line-height: $h3-line-height;
-        }
-
-        p{
-            font-size: $p;
-            color: $dark-color;
-            line-height: $p-line-height;
-            letter-spacing: $p-spacing;
-            font-weight: $p-font-weight;
-        }
-    }
-}
-
-/* ------------------- Grids index ------------------*/
-
-.whyDesign{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
-    grid-template-areas: 
-    "whyDesignImage whyDesignText";
-    padding: 0rem 0rem;
-    align-items: center;
-}
-
-#whyDesignImage{
-    grid-area: whyDesignImage;
-    justify-self: start;
-}
-
-#whyDesignText{
-    grid-area: whyDesignText;
-    justify-self: start;
-    padding-left: 2rem;
-
-        p {
-            padding: 2rem 0rem;
-        }
-}
-
-.thisis{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
-    grid-template-areas: 
-    "thisisText ThisisImage";
+.designWorks{
     padding-top: $up-padding;
-    align-items: center;
-}
+    padding-bottom: $up-padding;
+    padding-left: $sides-padding;
+    padding-right: 0rem;
+    // display: flex;
+	// flex-direction: row;
+    // flex-wrap: nowrap;
+	// height: 700px;
+	// justify-content: center;
+	// align-items: flex-start;
+	// overflow-y: auto;
+    position: relative;
 
-#thisisText{
-    grid-area: thisisText;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 2rem;
+    // .left {
+    //     width: 70%;
+    //     position: absolute;
+    //     }
+    }
 
-        p{
-            padding: 2rem 0rem;
-            text-align: right;
-        }
-}
+    .right {
+        padding-left: 30%;
+        display:flex;
+        color: $dark-color;
+        font-size: $p;
+        text-align: left;
+        padding-top: 0rem;
+        justify-content: end;
+    }
 
-#thisisImage{
-    grid-area: ThisisImage;
-    justify-self: end;
-}
+    #sticky-div{
+        position: sticky;
+        width: 30%;
+        top: 10rem;
+        color: $dark-color;
+        font-size: 3.5rem;
+        font-weight: $h2-bold;
+        letter-spacing: $h2-spacing;
+        line-height: $h2-line-height;
+        text-align: left;
+        // margin-top: 0 ;
+        // padding-top: 0rem;
+        text-decoration: underline;
+    }
+
+    #sticky-div2{
+        position: sticky;
+        width: 27%;
+        top: 10rem;
+        color: $dark-color;
+        background-color: #ffffff;
+        font-size: 3.5rem;
+        font-weight: $h2-bold;
+        letter-spacing: $h2-spacing;
+        line-height: $h2-line-height;
+        text-align: left;
+        // margin-top: 0 ;
+        // padding-top: 0rem;
+        text-decoration: underline;
+        z-index: 9;
+    }
+
+
+
+
+
+
 
 @import "MediaQ";
