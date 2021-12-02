@@ -213,10 +213,15 @@
     }
 
     .blogArticles{
+        padding:0rem $sides-padding-mobile;
+        margin: 0rem 0rem;
 
         .Blog{
-            padding-left: $sides-padding-mobile;
             grid-template-rows: 20rem 2rem 5rem 2rem;
+            padding-top: $bpadding-top;
+            padding-right: $bpadding-top;
+            padding-bottom: $bpadding-bottom;
+            padding-left: $bpadding-top;
 
             .BlogImage{
                 width: 100%;

@@ -278,11 +278,17 @@ main {
       .portfolio .portfolioCards .polaroid {
         width: 400px;
         height: auto; }
-  .blogArticles .Blog {
-    padding-left: 2rem;
-    grid-template-rows: 20rem 2rem 5rem 2rem; }
-    .blogArticles .Blog .BlogImage {
-      width: 100%; } }
+  .blogArticles {
+    padding: 0rem 2rem;
+    margin: 0rem 0rem; }
+    .blogArticles .Blog {
+      grid-template-rows: 20rem 2rem 5rem 2rem;
+      padding-top: 0rem;
+      padding-right: 0rem;
+      padding-bottom: 4rem;
+      padding-left: 0rem; }
+      .blogArticles .Blog .BlogImage {
+        width: 100%; } }
 
 .services {
   padding: 4rem 3.5rem; }
@@ -494,11 +500,17 @@ main {
       .portfolio .portfolioCards .polaroid {
         width: 400px;
         height: auto; }
-  .blogArticles .Blog {
-    padding-left: 2rem;
-    grid-template-rows: 20rem 2rem 5rem 2rem; }
-    .blogArticles .Blog .BlogImage {
-      width: 100%; } }
+  .blogArticles {
+    padding: 0rem 2rem;
+    margin: 0rem 0rem; }
+    .blogArticles .Blog {
+      grid-template-rows: 20rem 2rem 5rem 2rem;
+      padding-top: 0rem;
+      padding-right: 0rem;
+      padding-bottom: 4rem;
+      padding-left: 0rem; }
+      .blogArticles .Blog .BlogImage {
+        width: 100%; } }
 
 .portfolio {
   padding: 4rem 3.5rem; }
@@ -810,11 +822,17 @@ footer {
       .portfolio .portfolioCards .polaroid {
         width: 400px;
         height: auto; }
-  .blogArticles .Blog {
-    padding-left: 2rem;
-    grid-template-rows: 20rem 2rem 5rem 2rem; }
-    .blogArticles .Blog .BlogImage {
-      width: 100%; } }
+  .blogArticles {
+    padding: 0rem 2rem;
+    margin: 0rem 0rem; }
+    .blogArticles .Blog {
+      grid-template-rows: 20rem 2rem 5rem 2rem;
+      padding-top: 0rem;
+      padding-right: 0rem;
+      padding-bottom: 4rem;
+      padding-left: 0rem; }
+      .blogArticles .Blog .BlogImage {
+        width: 100%; } }
 
 .contactUs {
   padding: 4rem 3.5rem; }
